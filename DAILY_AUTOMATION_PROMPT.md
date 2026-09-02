@@ -59,8 +59,13 @@ PHASE A - READ STATE (once, reuse all run)
    documentaries about the same real-world subject.
 
    THIS PROFILE HAS EXACTLY SIX WATCHED IDENTITIES: Knives Out, The Sixth
-   Sense, Dark, Lost, Severance and Under the Dome. Everything else in
-   baseline_evidence is unwatched and fully recommendable.
+   Sense, Dark, Lost, Severance and Under the Dome.
+
+   Everything else in baseline_evidence is UNWATCHED. That is not the same
+   as wanted: recommendable in that block is DERIVED from watched-ness by
+   the schema and always reads true for an unwatched entry, so it is not a
+   want flag and must never be read as one. Explicit user rejection is a
+   SEPARATE set, built in the next step.
 
    PARTIAL SERIES EXPOSURE DOES NOT EXCLUDE A SERIES. Stremio carries ONE
    identity per series, so marking a partly-watched show as watched would
@@ -69,7 +74,44 @@ PHASE A - READ STATE (once, reuse all run)
    recommendable. So is Shutter Island, where the user explicitly could
    not remember: uncertainty resolves to UNWATCHED.
 
-5. PERSONALIZATION IS PRESENTLY DORMANT.
+5. BUILD THE USER-REJECTION EXCLUSION SET.
+
+   These are titles the user explicitly said they do not want. It is a
+   THIRD set and is never conflated with the other two: the public
+   identity set prevents duplicates, the watched set prevents
+   re-recommending something already seen, and this set enforces an
+   identity-level decision by the user.
+
+   Build it from BOTH sources, keyed by public identity exactly as in
+   step 3:
+
+     a. data/rejections.json - the persistent store. Read every entry in
+        items[]. This file is the AUTHORITY and it is where future
+        rejections are recorded.
+
+     b. any baseline_evidence entry the user flatly dismissed. At present
+        every such title is already listed in data/rejections.json, so (a)
+        is sufficient today; check both anyway, because they can diverge.
+
+   EXPLICIT USER REJECTION OUTRANKS RECOMMENDATION SCORE. A title in this
+   set must NEVER be researched deeply, accepted, or re-proposed, no
+   matter how high its deterministic DNA score. Several listed titles do
+   score above minimum_match_score, and that is precisely why this set
+   exists. Structural fit and user want are different questions.
+
+   A NEGATIVE REACTION IS NOT A REJECTION. Mixed, uncertain, lukewarm and
+   "the concept is interesting but it looks old" reactions are NOT in this
+   set and must stay fully eligible - Memento, Twin Peaks, Wayward Pines,
+   True Detective, From, The Leftovers, The Invisible Guest and The
+   Killing are the documented cases. Negative evidence shapes the
+   PROFILE; it does not ban a TITLE. Never widen this set by inference,
+   and never add to it from a reaction you are interpreting rather than
+   reading.
+
+   Only the user may add to data/rejections.json. Discovery automation
+   reads it and never writes it.
+
+6. PERSONALIZATION IS PRESENTLY DORMANT.
 
    Do NOT read any private feedback repository, and do NOT create,
    modify or reference data/personalized-scores.json, unless this
@@ -155,7 +197,7 @@ PHASE A - READ STATE (once, reuse all run)
 PHASE B - RESEARCH (time-boxed)
 =====================================================================
 
-6. Search the current web for candidate mysteries. The search universe is:
+7. Search the current web for candidate mysteries. The search universe is:
 
      unexplained phenomena
      strange natural, biological or environmental events
@@ -171,10 +213,17 @@ PHASE B - RESEARCH (time-boxed)
      why-dunits, where the known event is not the question
      supernatural mysteries WHEN the mystery is the point
 
-7. DEDUPLICATE BEFORE DEEP WORK, against the identity set and the
-   watched-exclusion set.
+8. APPLY ALL THREE EXCLUSION SETS BEFORE DEEP WORK. Drop a candidate that
+   is in the public identity set (duplicate), the watched-exclusion set,
+   or the USER-REJECTION EXCLUSION set.
 
-8. RESEARCH THE DENSITY AND THE CADENCE EXPLICITLY, BEFORE ANYTHING ELSE.
+   Do this BEFORE step 9, not after. A rejected title must never reach
+   deep research: spending the window establishing the revelation cadence
+   of something the user already said no to is wasted work, and having
+   the research in hand is exactly how a high score talks you into
+   accepting it anyway.
+
+9. RESEARCH THE DENSITY AND THE CADENCE EXPLICITLY, BEFORE ANYTHING ELSE.
 
    These are FIVE separate measurements and conflating them is the single
    most consequential error you can make here:
@@ -211,7 +260,7 @@ PHASE B - RESEARCH (time-boxed)
    that keeps revealing is wanted and a fast one that reveals nothing is
    not.
 
-9. RESEARCH THE PARANORMAL SPLIT SEPARATELY WHEN IT APPLIES.
+10. RESEARCH THE PARANORMAL SPLIT SEPARATELY WHEN IT APPLIES.
 
    supernatural_cause measures whether an impossible explanation is real
    and central. paranormal_horror_focus measures haunting, possession and
@@ -222,7 +271,7 @@ PHASE B - RESEARCH (time-boxed)
    actively wanted. Establish which one you are looking at from actual
    narrative evidence, never from the horror shelf it sits on.
 
-10. Then write the COMPLETE descriptive Content DNA vector using the
+11. Then write the COMPLETE descriptive Content DNA vector using the
     registry in data/taste-profile.json. All 30 values.
 
     DNA IS DESCRIPTIVE. It says what a title IS, never how much it will
@@ -239,9 +288,9 @@ PHASE B - RESEARCH (time-boxed)
         not a retro STYLE.
       - visual_quality is CRAFT and is independent of era.
 
-11. dna_tags may contain ONLY values from the tag_registry. Read it.
+12. dna_tags may contain ONLY values from the tag_registry. Read it.
 
-12. SOURCE PROVENANCE IS MANDATORY AND IS NOT AN EVIDENCE SUMMARY.
+13. SOURCE PROVENANCE IS MANDATORY AND IS NOT AN EVIDENCE SUMMARY.
 
     reason = the short human-readable card text.
     source = the ACTUAL MATERIAL your research rested on, as URLs.
@@ -263,7 +312,7 @@ PHASE B - RESEARCH (time-boxed)
     sufficient to decide whether a paranormal title is mystery-first. If
     you cannot support those, do not accept the title.
 
-13. STOP RESEARCHING at the daily caps or roughly half the working window.
+14. STOP RESEARCHING at the daily caps or roughly half the working window.
     Fewer validated discoveries beats a timeout, and reducing scope must
     never weaken a threshold, a guardrail or DNA quality.
 
@@ -271,12 +320,18 @@ PHASE B - RESEARCH (time-boxed)
 PHASE C - ACCEPT, VALIDATE, COMMIT (reserve time)
 =====================================================================
 
-14. Score and accept only at or above automation_rules.minimum_match_score.
+15. Score and accept only at or above automation_rules.minimum_match_score.
     match_score IS the computed dna-match row score - post-archetype-bonus,
     post-guardrail, clamped. Never invent a second holistic number and
     never write a number you did not compute.
 
-15. ENFORCE THE HARD EXCLUSION AT INGESTION. A candidate with
+    A QUALIFYING SCORE DOES NOT OVERRIDE AN EXCLUSION. Re-check every
+    candidate against the USER-REJECTION EXCLUSION set here as well as at
+    step 8, and drop it if listed - even at 90+. Explicit user rejection
+    outranks recommendation score, always, and no amount of structural fit
+    converts a "no" into a "yes".
+
+16. ENFORCE THE HARD EXCLUSION AT INGESTION. A candidate with
     central_mystery <= 2 is REJECTED OUTRIGHT and never written to
     data/library.json or a discovery file - not even to appear in Full
     Watchlist, which does not consult DNA and would publish a title that
@@ -284,18 +339,18 @@ PHASE C - ACCEPT, VALIDATE, COMMIT (reserve time)
     Sci-Fi, Thriller, Fantasy, Action or Anime. That is the point of
     separate addons.
 
-16. RESPECT THE COMBINATION PENALTIES rather than working around them.
+17. RESPECT THE COMBINATION PENALTIES rather than working around them.
     They are contextual, so a strong enough title can still clear the bar
     despite one - but never adjust a DNA value to stop one firing. If
     premise_without_density or slow_procedural_without_payoff fires, that
     is the model working.
 
-17. Write accepted titles to a NEW APPEND-ONLY file
+18. Write accepted titles to a NEW APPEND-ONLY file
     data/discoveries/<UTC-date>-<suffix>.json. Never edit or delete an
     existing discovery file. A second run on the same UTC date is valid
     and needs a new suffix; it must not recycle an earlier run's items.
 
-18. Append a run record to data/discovery-log.json with searched,
+19. Append a run record to data/discovery-log.json with searched,
     accepted, rejected and duplicate counts, and a rejection summary that
     names density and cadence rejections explicitly.
 
@@ -307,52 +362,58 @@ Immediately before EVERY public write - the discovery file, the log, and
 any later repair commit - run this gate in full. Not the identity set you
 built in PHASE A. A fresh one.
 
-19. FRESHLY FETCH the CURRENT default-branch data/library.json.
+20. FRESHLY FETCH the CURRENT default-branch data/library.json.
 
-20. FRESHLY ENUMERATE AND READ every CURRENT data/discoveries/*.json.
+21. FRESHLY ENUMERATE AND READ every CURRENT data/discoveries/*.json.
     Enumerate the directory again; do not reuse the PHASE A listing.
 
-21. USE THIS REPOSITORY'S ACTUAL CURRENT scripts/identity.mjs and the
+21b. FRESHLY RE-READ data/rejections.json and rebuild the USER-REJECTION
+    EXCLUSION set from it. The user may have added an entry while this run
+    was researching, and a rejection recorded mid-run must still be
+    honoured. Drop any surviving proposed item that is now listed, and
+    count it as a rejection rather than a duplicate in the bookkeeping.
+
+22. USE THIS REPOSITORY'S ACTUAL CURRENT scripts/identity.mjs and the
     title normalization in scripts/cinemeta.mjs. Do not reimplement
     either from memory. Identity semantics must match validate.mjs
     EXACTLY:
         valid IMDb identity : `${type}:${imdb_id}`  when /^tt\d+$/
         fallback            : `${type}:${normalizeTitle(title)}:${year}`
 
-22. REBUILD THE COMPLETE PUBLIC IDENTITY SET MECHANICALLY from those two
+23. REBUILD THE COMPLETE PUBLIC IDENTITY SET MECHANICALLY from those two
     sources. Do not carry anything forward by hand.
 
-23. COMPARE every proposed new item against:
+24. COMPARE every proposed new item against:
       - the rebuilt library identity set
       - every discovery file
       - EVERY OTHER ITEM PROPOSED IN THIS SAME RUN
 
-24. IF A DUPLICATE EXISTS, REMOVE THE ITEM BEFORE WRITING. Not after.
+25. IF A DUPLICATE EXISTS, REMOVE THE ITEM BEFORE WRITING. Not after.
 
-25. UPDATE THE RUN BOOKKEEPING TRUTHFULLY: searched, accepted, rejected,
+26. UPDATE THE RUN BOOKKEEPING TRUTHFULLY: searched, accepted, rejected,
     duplicates, accepted_items and the rejection summary must describe
     what actually happened. NEVER leave a removed duplicate listed as
     accepted. NEVER claim duplicates = 0 unless this actual fresh final
     gate produced zero duplicates.
 
-26. REGENERATE the discovery file and the log entry FROM THE SURVIVING
+27. REGENERATE the discovery file and the log entry FROM THE SURVIVING
     ITEMS ONLY.
 
-27. IF NO ACCEPTED ITEMS REMAIN: create NO discovery file, but still
+28. IF NO ACCEPTED ITEMS REMAIN: create NO discovery file, but still
     append the zero-finding / all-duplicate run to data/discovery-log.json
     with accepted 0 and accepted_items [] and a summary saying so.
 
-28. IMMEDIATELY BEFORE WRITING, re-fetch the target files' current SHAs
-    and state. If the repository changed materially since step 19, repeat
-    steps 19-27 before proceeding.
+29. IMMEDIATELY BEFORE WRITING, re-fetch the target files' current SHAs
+    and state. If the repository changed materially since step 20, repeat
+    steps 20-28 before proceeding.
 
-29. VALIDATE by running:  node scripts/validate.mjs
+30. VALIDATE by running:  node scripts/validate.mjs
     It must pass. Fix the DATA on failure - never weaken the validator,
     never edit a vendored file in scripts/, never commit past a failure.
 
-30. COMMIT ONCE, TRANSACTIONALLY: discovery file and log together.
+31. COMMIT ONCE, TRANSACTIONALLY: discovery file and log together.
 
-31. REPORT accepted / rejected / duplicate counts and say what was
+32. REPORT accepted / rejected / duplicate counts and say what was
     rejected and why.
 
 A ZERO-FINDING RUN IS A VALID RUN. If nothing clears the bar, commit
@@ -363,12 +424,12 @@ fill a quota.
 PHASE E - POST-COMMIT SELF-REPAIR
 =====================================================================
 
-32. VERIFY the resulting "Build and Deploy Stremio Catalog" GitHub Actions
+33. VERIFY the resulting "Build and Deploy Stremio Catalog" GitHub Actions
     run. Do not stop at "committed".
 
-33. IF IT SUCCEEDS: done.
+34. IF IT SUCCEEDS: done.
 
-34. IF IT FAILS BECAUSE OF THIS RUN'S OWN NEWLY INTRODUCED DELTA -
+35. IF IT FAILS BECAUSE OF THIS RUN'S OWN NEWLY INTRODUCED DELTA -
     a duplicate identity, malformed DNA, an invalid dna_tag, a malformed
     or unreachable source, a discovery/log inconsistency, a schema
     failure, bad accepted_items bookkeeping, or any other validator
@@ -391,15 +452,15 @@ PHASE E - POST-COMMIT SELF-REPAIR
       - scripts/validate.mjs or any vendored engine file
       - static profile rules, weights, guardrails or thresholds
 
-35. IF SAFE REPAIR OF ONLY THIS RUN'S DELTA IS IMPOSSIBLE: remove or
+36. IF SAFE REPAIR OF ONLY THIS RUN'S DELTA IS IMPOSSIBLE: remove or
     revert ONLY this run's public delta so that main returns to the last
     known valid state. Then report what happened.
 
-36. IF THE WORKFLOW FAILED FOR EXTERNAL INFRASTRUCTURE REASONS unrelated
+37. IF THE WORKFLOW FAILED FOR EXTERNAL INFRASTRUCTURE REASONS unrelated
     to this run - a Pages outage, a runner failure, a network error
     fetching Cinemeta - do NOT make speculative data changes. Report it.
 
-37. NEVER weaken or bypass validate.mjs to get green CI.
+38. NEVER weaken or bypass validate.mjs to get green CI.
 
 =====================================================================
 NEVER ACCEPTABLE
@@ -430,6 +491,12 @@ NEVER ACCEPTABLE
 - writing to another repository or to private feedback
 - creating personalized-scores.json while personalization is off
 - silently accepting a duplicate
+- accepting a title listed in data/rejections.json, whatever it scores
+- researching a user-rejected title deeply instead of dropping it early
+- treating a mixed, uncertain or lukewarm reaction as a rejection
+- adding to data/rejections.json from automation, or widening it by
+  inference from a reaction you interpreted rather than read
+- reading baseline_evidence.recommendable as "the user wants this"
 - treating a failed GitHub Action as good enough
 - leaving main broken after your own commit
 ```

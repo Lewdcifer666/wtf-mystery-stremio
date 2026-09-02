@@ -20,6 +20,7 @@ import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { validateProfile, watchedEvidenceIdentities } from "../scripts/validate-profile.mjs";
 import { makePolicy, scoreItem, hardExcluded, baselineContentPre, evalCondition, exclusionCondition } from "../scripts/dna-score.mjs";
+import { normalizeTitle } from "../scripts/cinemeta.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, "..");
@@ -459,6 +460,179 @@ function runValidateWith(items) {
   check("TL4", "a hard-excluded title cannot be ingested",
     excluded.code !== 0 && /hard exclusion/.test(excluded.output),
     "the plain watch rows do not consult DNA and would publish it anyway");
+}
+
+// ---------------------------------------------------------------------------
+// TEST UR  explicit user rejection
+//
+// THE HOLE THIS CLOSES: several calibration titles score above
+// minimum_match_score and were still deliberately left out of the bootstrap,
+// because the user flatly dismissed them. Without a persistent identity-level
+// rejection set a future daily run would rediscover one, compute a qualifying
+// score, and accept it - the automation previously excluded only duplicates
+// and watched titles.
+//
+// The rejection set is NOT baseline_evidence.recommendable. That field is
+// DERIVED by the vendored schema - validate-profile.mjs enforces
+// recommendable === (evidence_type === "unwatched") and rejects any other
+// value - so it always reads true for an unwatched entry and can never carry
+// a want decision. data/rejections.json carries it instead: genre-owned,
+// read by no engine file, consumed by DAILY_AUTOMATION_PROMPT.md.
+// ---------------------------------------------------------------------------
+const rejections = JSON.parse(fs.readFileSync(path.join(root, "data", "rejections.json"), "utf8"));
+const prompt = fs.readFileSync(path.join(root, "DAILY_AUTOMATION_PROMPT.md"), "utf8");
+
+// Identity forms, exactly as validate.mjs computes them.
+const identityForms = e => {
+  const out = [];
+  if (e.imdb_id && /^tt\d+$/.test(e.imdb_id)) out.push(`${e.type}:${e.imdb_id}`);
+  if (Number.isInteger(e.year)) out.push(`${e.type}:${normalizeTitle(e.title)}:${e.year}`);
+  return out;
+};
+const REJECTED = new Set(rejections.items.flatMap(identityForms));
+const isUserRejected = it => identityForms(it).some(f => REJECTED.has(f));
+
+check("UR0", "data/rejections.json carries a populated, schema-versioned store",
+  rejections.schema_version === 1 && Array.isArray(rejections.items) && rejections.items.length > 0,
+  `${rejections.items.length} entries`);
+check("UR0b", "every rejection entry is identity-keyed and self-describing",
+  rejections.items.every(i =>
+    /^tt\d+$/.test(i.imdb_id) && (i.type === "movie" || i.type === "series")
+    && Number.isInteger(i.year) && typeof i.title === "string" && i.title.length > 0
+    && typeof i.user_position === "string" && i.user_position.length > 0),
+  "an entry with no identity cannot be enforced, and one with no quoted position cannot be audited");
+
+// --- USER-REJECTION TEST 1 -------------------------------------------------
+// A rejected identity carrying a DNA vector that scores far above the
+// threshold is STILL excluded. Structural fit never converts a no into a yes.
+{
+  const venice = rejections.items.find(i => i.title === "A Haunting in Venice");
+  const probe = item(PHENOMENON, {
+    imdb_id: venice.imdb_id, type: "movie", title: venice.title, year: venice.year
+  });
+  const score = scoreItem(policy, row("dna-match"), probe, new Map()).score;
+  check("UR1", "TEST 1 - a REJECTED identity scoring far above the minimum is still excluded",
+    score >= profile.automation_rules.minimum_match_score + 20 && isUserRejected(probe),
+    `score ${score} vs minimum ${profile.automation_rules.minimum_match_score}; excluded=${isUserRejected(probe)}`);
+  check("UR1b", "...and every stored rejection is enforceable by identity",
+    rejections.items.every(r => isUserRejected(r)));
+  check("UR1c", "...and none of them reached the bootstrap library", (() => {
+    const lib = JSON.parse(fs.readFileSync(path.join(root, "data", "library.json"), "utf8")).items;
+    return !lib.some(isUserRejected);
+  })());
+  check("UR1d", "the rejection store states that score never overrides it",
+    /OUTRANKS RECOMMENDATION SCORE|outranks recommendation score/i.test(rejections.description));
+}
+
+// --- USER-REJECTION TEST 2 -------------------------------------------------
+// Negative evidence is NOT a permanent blacklist. Mixed, uncertain and
+// lukewarm reactions stay eligible.
+{
+  const SOFT = ["Memento", "Twin Peaks", "Wayward Pines", "True Detective",
+    "From", "The Leftovers", "The Invisible Guest", "The Killing"];
+  const missing = SOFT.filter(t => {
+    const e = evidence.find(i => i.title === t);
+    return !e || isUserRejected(e);
+  });
+  check("UR2", "TEST 2 - every mixed/uncertain/lukewarm title stays ELIGIBLE",
+    missing.length === 0, `wrongly rejected: ${missing.join(", ")}`);
+
+  const negativeButKept = SOFT.filter(t => {
+    const e = evidence.find(i => i.title === t);
+    return e && (e.evidence_class === "trailer_aversion" || e.reaction === "uncertain");
+  });
+  check("UR2b", "...and they genuinely DO carry negative or mixed evidence",
+    negativeButKept.length === SOFT.length,
+    "otherwise this test proves nothing: negative evidence != permanent blacklist");
+
+  check("UR2c", "only reaction 'unappealing' may be a rejection", (() => {
+    const rejectedTitles = new Set(rejections.items.map(r => r.title));
+    return evidence.filter(e => rejectedTitles.has(e.title) && e.reaction !== "unappealing").length === 0;
+  })());
+
+  check("UR2d", "Twin Peaks is the documented 'unappealing' EXCEPTION and stays eligible", (() => {
+    const tp = evidence.find(e => e.title === "Twin Peaks");
+    return tp.reaction === "unappealing" && !isUserRejected(tp)
+      && /Twin Peaks/.test(rejections.classification_rule);
+  })(), "the user said they might try it again; the exception is recorded, not silent");
+}
+
+// --- USER-REJECTION TEST 3 -------------------------------------------------
+// The three sets are separate concepts and are never conflated.
+{
+  const watchedForms = new Set(watchedEvidenceIdentities(profile).flatMap(identityForms));
+  const overlap = [...REJECTED].filter(f => watchedForms.has(f));
+  check("UR3", "TEST 3 - the watched set and the user-rejection set are DISJOINT",
+    overlap.length === 0, overlap.join(", "));
+  check("UR3b", "a watched title is excluded for being WATCHED, not for being rejected",
+    !isUserRejected({ type: "series", imdb_id: "tt5753856", title: "Dark", year: 2017 })
+    && watchedForms.has("series:tt5753856"));
+  check("UR3c", "the public identity set is a third, separate concept", (() => {
+    const lib = JSON.parse(fs.readFileSync(path.join(root, "data", "library.json"), "utf8")).items;
+    return lib.length > 0 && lib.every(i => !isUserRejected(i) && !identityForms(i).some(f => watchedForms.has(f)));
+  })(), "duplicate, watched and rejected are three different reasons to skip a title");
+  check("UR3d", "no rejection entry is sourced from the watched set",
+    rejections.items.every(r => r.source === "baseline_evidence" && r.reaction === "unappealing"));
+}
+
+// --- USER-REJECTION TEST 4 -------------------------------------------------
+check("UR4", "TEST 4 - the partial-exposure series remain recommendable and unrejected", (() => {
+  const partial = ["Archive 81", "Bodies", "The OA", "Twin Peaks"];
+  return partial.every(t => {
+    const e = evidence.find(i => i.title === t);
+    return e && e.evidence_type === "unwatched" && e.recommendable === true && !isUserRejected(e);
+  });
+})(), "one Stremio identity per series: partial exposure is neither a watch nor a rejection");
+check("UR4b", "...and Shutter Island, the uncertain-watch case, is also unrejected", (() => {
+  const e = evidence.find(i => i.title === "Shutter Island");
+  return e.evidence_type === "unwatched" && !isUserRejected(e);
+})());
+
+// --- USER-REJECTION TEST 5 -------------------------------------------------
+// The canonical prompt must actually instruct the automation to apply the set,
+// in both places, or none of the above is enforced at run time.
+{
+  check("UR5", "TEST 5 - the prompt builds the USER-REJECTION EXCLUSION set in PHASE A",
+    /BUILD THE USER-REJECTION EXCLUSION SET/.test(prompt));
+  check("UR5b", "...reads data/rejections.json as the authority",
+    prompt.includes("data/rejections.json") && /AUTHORITY/.test(prompt));
+  check("UR5c", "...applies it BEFORE deep research",
+    /APPLY ALL THREE EXCLUSION SETS BEFORE DEEP WORK/.test(prompt)
+    && /must never reach\s+deep research/.test(prompt));
+  check("UR5d", "...applies it again at acceptance, above the score",
+    /A QUALIFYING SCORE DOES NOT OVERRIDE AN EXCLUSION/.test(prompt));
+  check("UR5e", "...re-reads it in the final gate, so a mid-run rejection is honoured",
+    prompt.includes("FRESHLY RE-READ data/rejections.json"));
+  check("UR5f", "...states that a negative reaction is NOT a rejection",
+    /A NEGATIVE REACTION IS NOT A REJECTION/.test(prompt));
+  check("UR5g", "...no longer claims every unwatched baseline title is fully recommendable",
+    !/unwatched and fully recommendable/.test(prompt),
+    "that sentence was the contradiction this repair exists to remove");
+  check("UR5h", "...forbids automation writing to the rejection store",
+    prompt.includes("Only the user may add to data/rejections.json"));
+  check("UR5i", "...names the three sets as distinct",
+    /THIRD set and is never conflated/.test(prompt));
+}
+
+// --- USER-REJECTION TEST 6 -------------------------------------------------
+// The mechanism itself: an identity present in the store is excluded, one
+// absent from it is not.
+{
+  const present = rejections.items[rejections.items.length - 1];
+  check("UR6", "TEST 6 - an identity IN data/rejections.json is excluded",
+    isUserRejected({ type: present.type, imdb_id: present.imdb_id, title: present.title, year: present.year }));
+  check("UR6b", "...an identity NOT in it is not excluded",
+    !isUserRejected({ type: "movie", imdb_id: "tt9999999", title: "Unlisted Probe", year: 2020 }));
+  check("UR6c", "...the fallback title+year+type form is enforced too, not only the IMDb id",
+    isUserRejected({ type: present.type, imdb_id: null, title: present.title, year: present.year }),
+    "a rediscovery that arrives without an IMDb id must still be caught");
+  check("UR6d", "...and normalization matches validate.mjs (case and punctuation insensitive)",
+    isUserRejected({ type: present.type, imdb_id: null, title: present.title.toUpperCase(), year: present.year }));
+  check("UR6e", "...and a rejected title is caught even under a different type", (() => {
+    const m = rejections.items.find(i => i.type === "movie");
+    return isUserRejected({ type: "movie", imdb_id: m.imdb_id, title: m.title, year: m.year })
+      && !isUserRejected({ type: "series", imdb_id: m.imdb_id, title: m.title, year: m.year });
+  })(), "identity is type-scoped, exactly as identity.mjs defines it");
 }
 
 // ---------------------------------------------------------------------------
