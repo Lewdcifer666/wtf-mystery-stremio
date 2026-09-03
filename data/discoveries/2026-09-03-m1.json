@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-09-03-m1",
+  "timestamp": "2026-09-03T13:53:00Z",
+  "items": [
+    {
+      "imdb_id": "tt7057496",
+      "type": "movie",
+      "title": "Forgotten",
+      "year": 2017,
+      "status": "watch",
+      "match_score": 91,
+      "reason": "A brother returns from a 19-day kidnapping seeming like a different person, then the film keeps overturning what Jin-seok thinks is real through identity, memory and motive revelations rather than saving everything for one final twist.",
+      "tags": [],
+      "added_at": "2026-09-03T13:53:00Z",
+      "added_by": "daily-automation",
+      "discovery_run_id": "2026-09-03-m1",
+      "source": "https://en.wikipedia.org/wiki/Forgotten_(2017_film) ; https://www.koreanfilm.or.kr/eng/films/index/filmsView.jsp?movieCd=20173581 ; https://www.asianmovieweb.com/en/reviews/forgotten.htm ; https://www.modernkoreancinema.com/2018/06/review-forgotten-mislays-its-mystery.html ; https://londonkoreanlinks.net/2019/09/06/forgotten-2017-review-hc/",
+      "dna": {
+        "central_mystery": 9,
+        "mystery_density": 8,
+        "unexplained_phenomenon": 7,
+        "cause_uncertainty": 9,
+        "investigation": 7,
+        "clue_puzzling": 8,
+        "culprit_hunt": 5,
+        "progressive_revelation": 8,
+        "revelation_frequency": 8,
+        "plot_twists": 10,
+        "misdirection": 9,
+        "suspense": 9,
+        "hidden_truth": 10,
+        "conspiracy_coverup": 4,
+        "containment": 5,
+        "unknown_rules": 8,
+        "time_anomaly": 0,
+        "reality_uncertainty": 8,
+        "memory_identity_uncertainty": 10,
+        "scientific_cause": 5,
+        "supernatural_cause": 0,
+        "paranormal_horror_focus": 2,
+        "horror_focus": 4,
+        "survival_pressure": 4,
+        "weirdness": 8,
+        "drama_focus": 5,
+        "romance_focus": 1,
+        "visual_quality": 8,
+        "retro_visual_style": 1,
+        "pace_speed": 7
+      },
+      "dna_confidence": 0.86,
+      "dna_tags": [
+        "amnesia"
+      ]
+    }
+  ]
+}
