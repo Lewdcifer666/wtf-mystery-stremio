@@ -1,4 +1,22 @@
 {
   "schema_version": 1,
-  "runs": []
+  "runs": [
+    {
+      "run_id": "2026-09-03-m1",
+      "timestamp": "2026-09-03T13:53:00Z",
+      "searched": 1,
+      "accepted": 1,
+      "rejected": 0,
+      "duplicates": 0,
+      "accepted_items": [
+        {
+          "imdb_id": "tt7057496",
+          "type": "movie",
+          "title": "Forgotten",
+          "match_score": 91
+        }
+      ],
+      "rejection_summary": "Forgotten was accepted at a deterministic Mystery DNA score of 91 after explicit whole-runtime density and revelation-cadence research. Multiple independent reviews describe an omnipresent central mystery, a major midpoint reset followed by further explanations and sub-twists, sustained uncertainty about identity/reality, and a twist-heavy final third. The paranormal-looking material is brief and ultimately gives way to psychological-thriller explanation, so paranormal_horror_first does not fire. No watched, explicit-user-rejection, hard-exclusion or duplicate case applied, and the fresh final identity check found zero duplicates. Personalization remains dormant because data/personalized-scores.json is absent."
+    }
+  ]
 }
