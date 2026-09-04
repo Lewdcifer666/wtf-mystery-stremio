@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-09-04-m1",
+  "timestamp": "2026-09-04T07:00:25Z",
+  "items": [
+    {
+      "imdb_id": "tt10530176",
+      "type": "movie",
+      "title": "The Call",
+      "year": 2020,
+      "status": "watch",
+      "match_score": 81,
+      "reason": "A phone links two women twenty years apart, and every intervention rewrites the present—revived family members, erased victims, altered evidence and a final counter-rewrite—so the time anomaly keeps changing what Seo-yeon knows instead of serving as a one-scene hook.",
+      "tags": [],
+      "added_at": "2026-09-04T07:00:25Z",
+      "added_by": "daily-automation",
+      "discovery_run_id": "2026-09-04-m1",
+      "source": "https://www.netflix.com/de-en/title/81342505 ; https://en.wikipedia.org/wiki/The_Call_(2020_South_Korean_film) ; https://www.cinemaescapist.com/2020/12/review-call-korean-movie-netflix/ ; https://www.rottentomatoes.com/m/the_call_2020_kr",
+      "dna": {
+        "central_mystery": 7,
+        "mystery_density": 7,
+        "unexplained_phenomenon": 8,
+        "cause_uncertainty": 4,
+        "investigation": 4,
+        "clue_puzzling": 5,
+        "culprit_hunt": 7,
+        "progressive_revelation": 8,
+        "revelation_frequency": 8,
+        "plot_twists": 9,
+        "misdirection": 6,
+        "suspense": 9,
+        "hidden_truth": 6,
+        "conspiracy_coverup": 0,
+        "containment": 5,
+        "unknown_rules": 8,
+        "time_anomaly": 10,
+        "reality_uncertainty": 9,
+        "memory_identity_uncertainty": 3,
+        "scientific_cause": 0,
+        "supernatural_cause": 6,
+        "paranormal_horror_focus": 3,
+        "horror_focus": 7,
+        "survival_pressure": 8,
+        "weirdness": 8,
+        "drama_focus": 5,
+        "romance_focus": 0,
+        "visual_quality": 8,
+        "retro_visual_style": 1,
+        "pace_speed": 8
+      },
+      "dna_confidence": 0.86,
+      "dna_tags": [
+        "serial_killer"
+      ]
+    }
+  ]
+}
