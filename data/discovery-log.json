@@ -3,7 +3,7 @@
   "runs": [
     {
       "run_id": "2026-09-03-m1",
-      "timestamp": "2026-09-03T13:53:00Z",
+      "timestamp": "2026-09-03T06:58:59Z",
       "searched": 1,
       "accepted": 1,
       "rejected": 0,
@@ -30,10 +30,10 @@
           "imdb_id": "tt10530176",
           "type": "movie",
           "title": "The Call",
-          "match_score": 81
+          "match_score": 78
         }
       ],
-      "rejection_summary": "The Call was accepted at a deterministic Mystery DNA score of 81 after explicit whole-runtime density and revelation-cadence research. Across the film, cross-time interventions repeatedly rewrite the present, erase or restore people, change evidence, and reframe Seo-yeon's understanding rather than leaving the time anomaly as a premise-only hook. Its murder/horror mode is substantial, but the impossible connection and its changing rules remain central and the paranormal-horror-first guardrail does not fire. No watched, explicit-user-rejection, hard-exclusion or duplicate case applied, and the fresh final identity check found zero duplicates. Personalization remains dormant because data/personalized-scores.json is absent."
+      "rejection_summary": "The Call was accepted at a deterministic Mystery DNA score of 78 after explicit whole-runtime density and revelation-cadence research. Across the film, cross-time interventions repeatedly rewrite the present, erase or restore people, change evidence, and reframe Seo-yeon's understanding rather than leaving the time anomaly as a premise-only hook. Its murder/horror mode is substantial, but the impossible connection and its changing rules remain central and the paranormal-horror-first guardrail does not fire. No watched, explicit-user-rejection, hard-exclusion or duplicate case applied, and the fresh final identity check found zero duplicates. Personalization remains dormant because data/personalized-scores.json is absent."
     }
   ]
 }
