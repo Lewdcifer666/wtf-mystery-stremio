@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-09-05-m1",
+  "timestamp": "2026-09-05T07:03:02Z",
+  "items": [
+    {
+      "imdb_id": "tt6097798",
+      "type": "movie",
+      "title": "Radius",
+      "year": 2017,
+      "status": "watch",
+      "match_score": 78,
+      "reason": "A man wakes after a crash with no memory and discovers that anyone who comes near him dies—then an immune woman, recovered memories and a buried shared history keep changing both the rules of the phenomenon and who he really is.",
+      "tags": [],
+      "added_at": "2026-09-05T07:03:02Z",
+      "added_by": "daily-automation",
+      "discovery_run_id": "2026-09-05-m1",
+      "source": "https://www.imdb.com/title/tt6097798/ ; https://www.imdb.com/title/tt6097798/plotsummary/ ; https://www.rottentomatoes.com/m/radius ; https://www.dreadcentral.com/reviews/250097/radius-frightfest-2017/",
+      "dna": {
+        "central_mystery": 8,
+        "mystery_density": 7,
+        "unexplained_phenomenon": 9,
+        "cause_uncertainty": 8,
+        "investigation": 6,
+        "clue_puzzling": 5,
+        "culprit_hunt": 0,
+        "progressive_revelation": 7,
+        "revelation_frequency": 6,
+        "plot_twists": 8,
+        "misdirection": 6,
+        "suspense": 8,
+        "hidden_truth": 9,
+        "conspiracy_coverup": 0,
+        "containment": 4,
+        "unknown_rules": 8,
+        "time_anomaly": 0,
+        "reality_uncertainty": 5,
+        "memory_identity_uncertainty": 10,
+        "scientific_cause": 2,
+        "supernatural_cause": 6,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 4,
+        "survival_pressure": 6,
+        "weirdness": 8,
+        "drama_focus": 5,
+        "romance_focus": 2,
+        "visual_quality": 7,
+        "retro_visual_style": 2,
+        "pace_speed": 6
+      },
+      "dna_confidence": 0.84,
+      "dna_tags": [
+        "amnesia"
+      ]
+    }
+  ]
+}

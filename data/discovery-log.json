@@ -34,6 +34,23 @@
         }
       ],
       "rejection_summary": "The Call was accepted at a deterministic Mystery DNA score of 78 after explicit whole-runtime density and revelation-cadence research. Across the film, cross-time interventions repeatedly rewrite the present, erase or restore people, change evidence, and reframe Seo-yeon's understanding rather than leaving the time anomaly as a premise-only hook. Its murder/horror mode is substantial, but the impossible connection and its changing rules remain central and the paranormal-horror-first guardrail does not fire. No watched, explicit-user-rejection, hard-exclusion or duplicate case applied, and the fresh final identity check found zero duplicates. Personalization remains dormant because data/personalized-scores.json is absent."
+    },
+    {
+      "run_id": "2026-09-05-m1",
+      "timestamp": "2026-09-05T07:03:02Z",
+      "searched": 1,
+      "accepted": 1,
+      "rejected": 0,
+      "duplicates": 0,
+      "accepted_items": [
+        {
+          "imdb_id": "tt6097798",
+          "type": "movie",
+          "title": "Radius",
+          "match_score": 78
+        }
+      ],
+      "rejection_summary": "Radius was accepted at a deterministic Mystery DNA score of 78 after explicit whole-runtime density and revelation-cadence research. Independent plot and review sources show that the film progresses from the death-radius discovery into the Jane/Rose immunity rule, recovered-memory identity questions, the missing-twin link and the serial-killer reveal, so the picture is rebuilt repeatedly rather than resting on a premise-only hook. Reviews do note a flatter second act and sparse explanation of the cosmic mechanism, so mystery_density, revelation_frequency and progressive_revelation were kept conservative rather than inflated. No watched, explicit-user-rejection, hard-exclusion or duplicate case applied, and the fresh final identity check found zero duplicates. Personalization remains dormant because data/personalized-scores.json is absent."
     }
   ]
 }
