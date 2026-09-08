@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-09-08-m1",
+  "timestamp": "2026-09-08T07:03:58Z",
+  "items": [
+    {
+      "imdb_id": "tt3528756",
+      "type": "movie",
+      "title": "The Incident",
+      "year": 2014,
+      "status": "watch",
+      "match_score": 86,
+      "reason": "Two groups become trapped in impossible looping spaces, and the film keeps exposing new rules, mirrored details and identity/time connections until the final explanation links the staircase and road incidents into one larger cycle.",
+      "tags": [],
+      "added_at": "2026-09-08T07:03:58Z",
+      "added_by": "daily-automation",
+      "discovery_run_id": "2026-09-08-m1",
+      "source": "https://www.imdb.com/title/tt3528756/ ; https://www.rottentomatoes.com/m/el_incidente ; https://en.wikipedia.org/wiki/The_Incident_(2014_film) ; https://www.yahoo.com/entertainment/film-review-incident-060839604.html ; https://taylorholmes.com/2020/05/15/baffling-movie-the-incident-explained/",
+      "dna": {
+        "central_mystery": 9,
+        "mystery_density": 8,
+        "unexplained_phenomenon": 10,
+        "cause_uncertainty": 9,
+        "investigation": 5,
+        "clue_puzzling": 6,
+        "culprit_hunt": 0,
+        "progressive_revelation": 6,
+        "revelation_frequency": 6,
+        "plot_twists": 8,
+        "misdirection": 6,
+        "suspense": 8,
+        "hidden_truth": 6,
+        "conspiracy_coverup": 0,
+        "containment": 10,
+        "unknown_rules": 9,
+        "time_anomaly": 8,
+        "reality_uncertainty": 9,
+        "memory_identity_uncertainty": 4,
+        "scientific_cause": 2,
+        "supernatural_cause": 9,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 4,
+        "survival_pressure": 7,
+        "weirdness": 9,
+        "drama_focus": 5,
+        "romance_focus": 1,
+        "visual_quality": 6,
+        "retro_visual_style": 3,
+        "pace_speed": 5
+      },
+      "dna_confidence": 0.84,
+      "dna_tags": [
+        "time_loop",
+        "sealed_barrier"
+      ]
+    }
+  ]
+}
