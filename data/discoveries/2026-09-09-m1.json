@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-09-09-m1",
+  "timestamp": "2026-09-09T06:57:54Z",
+  "items": [
+    {
+      "imdb_id": "tt6385952",
+      "type": "movie",
+      "title": "Volition",
+      "year": 2019,
+      "status": "watch",
+      "match_score": 84,
+      "reason": "A clairvoyant trying to prevent his own murder discovers that his visions are tied to a time-travel mechanism; midpoint and later timeline jumps keep revising what caused the visions, who is acting when, and whether his apparent fate can actually be changed.",
+      "tags": [],
+      "added_at": "2026-09-09T06:57:54Z",
+      "added_by": "daily-automation",
+      "discovery_run_id": "2026-09-09-m1",
+      "source": "https://www.imdb.com/title/tt6385952/ ; https://www.rottentomatoes.com/m/volition ; https://www.metacritic.com/movie/volition/critic-reviews/ ; https://www.rogerebert.com/reviews/volition-movie-review-2020 ; https://theplaylist.net/volition-review-20200710/",
+      "dna": {
+        "central_mystery": 8,
+        "mystery_density": 7,
+        "unexplained_phenomenon": 8,
+        "cause_uncertainty": 8,
+        "investigation": 4,
+        "clue_puzzling": 6,
+        "culprit_hunt": 3,
+        "progressive_revelation": 8,
+        "revelation_frequency": 7,
+        "plot_twists": 9,
+        "misdirection": 7,
+        "suspense": 8,
+        "hidden_truth": 7,
+        "conspiracy_coverup": 1,
+        "containment": 3,
+        "unknown_rules": 8,
+        "time_anomaly": 9,
+        "reality_uncertainty": 8,
+        "memory_identity_uncertainty": 4,
+        "scientific_cause": 8,
+        "supernatural_cause": 4,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 1,
+        "survival_pressure": 7,
+        "weirdness": 8,
+        "drama_focus": 4,
+        "romance_focus": 3,
+        "visual_quality": 7,
+        "retro_visual_style": 1,
+        "pace_speed": 7
+      },
+      "dna_confidence": 0.85,
+      "dna_tags": [
+        "time_loop"
+      ]
+    }
+  ]
+}
