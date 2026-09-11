@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-09-11-m1",
+  "timestamp": "2026-09-11T06:57:34Z",
+  "items": [
+    {
+      "imdb_id": "tt12298506",
+      "type": "movie",
+      "title": "Black Box",
+      "year": 2020,
+      "status": "watch",
+      "match_score": 79,
+      "reason": "An amnesiac father enters an experimental memory treatment, but each session exposes contradictions in his supposed past until the identity of the memories, the doctor’s hidden experiment and the creature inside his mind repeatedly reframe who is actually inhabiting the body.",
+      "tags": [],
+      "added_at": "2026-09-11T06:57:34Z",
+      "added_by": "daily-automation",
+      "discovery_run_id": "2026-09-11-m1",
+      "source": "https://www.imdb.com/title/tt12298506/ ; https://www.rottentomatoes.com/m/black_box ; https://thecinemaholic.com/black-box-2020-ending-explained/ ; https://www.thisisbarry.com/film/black-box-explained-2020-movie-ending-explained/",
+      "dna": {
+        "central_mystery": 8,
+        "mystery_density": 7,
+        "unexplained_phenomenon": 7,
+        "cause_uncertainty": 8,
+        "investigation": 5,
+        "clue_puzzling": 6,
+        "culprit_hunt": 2,
+        "progressive_revelation": 7,
+        "revelation_frequency": 6,
+        "plot_twists": 7,
+        "misdirection": 7,
+        "suspense": 7,
+        "hidden_truth": 9,
+        "conspiracy_coverup": 5,
+        "containment": 3,
+        "unknown_rules": 7,
+        "time_anomaly": 0,
+        "reality_uncertainty": 7,
+        "memory_identity_uncertainty": 10,
+        "scientific_cause": 9,
+        "supernatural_cause": 1,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 5,
+        "survival_pressure": 2,
+        "weirdness": 7,
+        "drama_focus": 6,
+        "romance_focus": 1,
+        "visual_quality": 7,
+        "retro_visual_style": 0,
+        "pace_speed": 5
+      },
+      "dna_confidence": 0.84,
+      "dna_tags": [
+        "amnesia",
+        "human_experiment"
+      ]
+    }
+  ]
+}
