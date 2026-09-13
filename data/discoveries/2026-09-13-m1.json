@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-09-13-m1",
+  "timestamp": "2026-09-13T06:58:11Z",
+  "items": [
+    {
+      "imdb_id": "tt5640450",
+      "type": "movie",
+      "title": "ARQ",
+      "year": 2016,
+      "status": "watch",
+      "match_score": 89,
+      "reason": "An engineer trapped in a home-invasion time loop gradually learns the machine's real function, who the raiders work for, which characters remember previous cycles, and finally that a larger outer loop has reset them thousands of times, so each iteration adds rules and reversals rather than merely repeating the setup.",
+      "tags": [],
+      "added_at": "2026-09-13T06:58:11Z",
+      "added_by": "daily-automation",
+      "discovery_run_id": "2026-09-13-m1",
+      "source": "https://www.imdb.com/title/tt5640450/ ; https://en.wikipedia.org/wiki/ARQ_(film) ; https://www.rottentomatoes.com/m/arq ; https://moviesandmania.com/2017/06/27/arq-2016-netflix-sci-fi-thriller-overview-cast-plot-reviews-trailer/",
+      "dna": {
+        "central_mystery": 8,
+        "mystery_density": 9,
+        "unexplained_phenomenon": 7,
+        "cause_uncertainty": 7,
+        "investigation": 6,
+        "clue_puzzling": 6,
+        "culprit_hunt": 5,
+        "progressive_revelation": 8,
+        "revelation_frequency": 8,
+        "plot_twists": 8,
+        "misdirection": 6,
+        "suspense": 8,
+        "hidden_truth": 7,
+        "conspiracy_coverup": 6,
+        "containment": 9,
+        "unknown_rules": 9,
+        "time_anomaly": 10,
+        "reality_uncertainty": 7,
+        "memory_identity_uncertainty": 3,
+        "scientific_cause": 10,
+        "supernatural_cause": 0,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 3,
+        "survival_pressure": 8,
+        "weirdness": 7,
+        "drama_focus": 4,
+        "romance_focus": 3,
+        "visual_quality": 6,
+        "retro_visual_style": 2,
+        "pace_speed": 8
+      },
+      "dna_confidence": 0.85,
+      "dna_tags": [
+        "time_loop"
+      ]
+    }
+  ]
+}
