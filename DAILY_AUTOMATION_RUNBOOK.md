@@ -17,6 +17,21 @@ PHASE A — SMALL CURRENT STATE
 3. Fetch scripts/dna-score.mjs and only the small policy files actually needed. A runnable checkout is optional and its absence is NOT a failure.
 4. Personalization remains optional and dormant while automation-state says personalization_enabled=false. This is effective use after freshness, validation and applicability checks; file existence alone never enables it. Keep stable baseline DNA scores until a fresh, valid snapshot has been deterministically rebuilt from the complete current feedback state. Never renew an expired snapshot timestamp or reuse old scores to make it active. Do not access private feedback.
 
+USER-REJECTION EXCLUSION CONTRACT
+BUILD THE USER-REJECTION EXCLUSION SET from automation-state.rejection_identity_forms. data/rejections.json is the persistent user-owned AUTHORITY for explicit title rejections; rejection_identity_forms is its compact runtime representation in automation-state.
+
+The public-identity set prevents duplicates, the watched-exclusion set prevents re-recommending confirmed watched identities, and the user-rejection set enforces explicit title-level rejection. The user-rejection set is a THIRD set and is never conflated with the other two.
+
+APPLY ALL THREE EXCLUSION SETS BEFORE DEEP WORK. Any identity matching public_identities, watched_identity_forms or rejection_identity_forms must never reach deep research.
+
+A NEGATIVE REACTION IS NOT A REJECTION. Mixed, uncertain, lukewarm or otherwise negative evidence may shape the profile but does not permanently blacklist an identity unless it is present in the explicit user-rejection store. Never infer or widen the rejection set from sentiment alone.
+
+A QUALIFYING SCORE DOES NOT OVERRIDE AN EXCLUSION. Duplicate, watched and explicitly rejected identities remain ineligible regardless of deterministic match_score.
+
+Only the user may add to data/rejections.json. Discovery automation reads the exported rejection state and current-main evidence but never writes, edits or deletes data/rejections.json.
+
+At finalization, re-fetch automation-state and use the candidate-specific current-main repository search in step 11a. That exact current-main search is the race-safe equivalent of a FRESHLY RE-READ data/rejections.json check for that candidate, so a rejection added during the run is honored without requiring an unbounded full-history read.
+
 PHASE B — RESEARCH
 5. Search efficiently for Mystery movies/series fitting the live profile. Reject any identity already in automation-state.public_identities or matching watched_identity_forms/rejection_identity_forms before deep research.
 6. Keep central_mystery, mystery_density, investigation, clue_puzzling, culprit_hunt, revelation_frequency and progressive_revelation distinct. An investigation-heavy story is not automatically a dense or rewarding mystery.
