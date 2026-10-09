@@ -478,10 +478,10 @@ function runValidateWith(items) {
 // recommendable === (evidence_type === "unwatched") and rejects any other
 // value - so it always reads true for an unwatched entry and can never carry
 // a want decision. data/rejections.json carries it instead: genre-owned,
-// read by no engine file, consumed by DAILY_AUTOMATION_PROMPT.md.
+// consumed by research preflight and independently by the trusted finalizer.
 // ---------------------------------------------------------------------------
 const rejections = JSON.parse(fs.readFileSync(path.join(root, "data", "rejections.json"), "utf8"));
-const prompt = fs.readFileSync(path.join(root, "DAILY_AUTOMATION_PROMPT.md"), "utf8");
+const prompt = fs.readFileSync(path.join(root, "DAILY_AUTOMATION_RUNBOOK.md"), "utf8");
 
 // Identity forms, exactly as validate.mjs computes them.
 const identityForms = e => {
@@ -590,29 +590,29 @@ check("UR4b", "...and Shutter Island, the uncertain-watch case, is also unreject
 })());
 
 // --- USER-REJECTION TEST 5 -------------------------------------------------
-// The canonical prompt must actually instruct the automation to apply the set,
-// in both places, or none of the above is enforced at run time.
+// Research applies the sets before deep work; trusted finalization independently
+// rechecks fresh exclusions. Actual finalizer behavior is exercised in
+// mystery-research.test.mjs, including an explicit rejection added after research.
 {
-  check("UR5", "TEST 5 - the prompt builds the USER-REJECTION EXCLUSION set in PHASE A",
-    /BUILD THE USER-REJECTION EXCLUSION SET/.test(prompt));
+  check("UR5", "TEST 5 - research excludes explicit user rejections",
+    /Skip public, confirmed-watched and explicitly rejected identities/.test(prompt));
   check("UR5b", "...reads data/rejections.json as the authority",
-    prompt.includes("data/rejections.json") && /AUTHORITY/.test(prompt));
+    /data\/rejections\.json as the\s+authority/.test(prompt));
   check("UR5c", "...applies it BEFORE deep research",
-    /APPLY ALL THREE EXCLUSION SETS BEFORE DEEP WORK/.test(prompt)
-    && /must never reach\s+deep research/.test(prompt));
-  check("UR5d", "...applies it again at acceptance, above the score",
-    /A QUALIFYING SCORE DOES NOT OVERRIDE AN EXCLUSION/.test(prompt));
-  check("UR5e", "...re-reads it in the final gate, so a mid-run rejection is honoured",
-    prompt.includes("FRESHLY RE-READ data/rejections.json"));
+    /explicitly rejected identities before deep\s+research/.test(prompt));
+  check("UR5d", "...states that finalization cannot override an exclusion with a score",
+    /A qualifying score never overrides an exclusion/.test(prompt));
+  check("UR5e", "...assigns fresh exclusion checks to the deterministic finalizer",
+    /finalizer independently reads fresh\s+source data, including the latest rejections/.test(prompt));
   check("UR5f", "...states that a negative reaction is NOT a rejection",
-    /A NEGATIVE REACTION IS NOT A REJECTION/.test(prompt));
+    /Negative or uncertain reactions do not create title rejections/.test(prompt));
   check("UR5g", "...no longer claims every unwatched baseline title is fully recommendable",
     !/unwatched and fully recommendable/.test(prompt),
     "that sentence was the contradiction this repair exists to remove");
   check("UR5h", "...forbids automation writing to the rejection store",
-    prompt.includes("Only the user may add to data/rejections.json"));
+    prompt.includes("Never edit the user-owned rejection store"));
   check("UR5i", "...names the three sets as distinct",
-    /THIRD set and is never conflated/.test(prompt));
+    /public, confirmed-watched and explicitly rejected identities/.test(prompt));
 }
 
 // --- USER-REJECTION TEST 6 -------------------------------------------------
@@ -772,7 +772,8 @@ if (fs.existsSync(path.join(root, "site", "catalog"))) {
   walk(root);
   check("IN1", "no cross-repo reference or runtime dependency", offenders.length === 0, offenders.join("\n         "));
   const pkg = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"));
-  check("IN2", "zero dependencies", !pkg.dependencies && !pkg.devDependencies);
+  check("IN2", "only the pinned packet validator dependency is allowed",
+    JSON.stringify(pkg.dependencies) === JSON.stringify({ ajv: "8.20.0" }) && !pkg.devDependencies);
 }
 check("VP1", "the profile validates", validateProfile(profile).length === 0, validateProfile(profile).join("\n         "));
 check("VP2", "the thresholds are Mystery-specific, not borrowed", (() => {
