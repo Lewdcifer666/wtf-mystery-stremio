@@ -1,0 +1,40 @@
+{
+  "run_id": "2026-10-10-m1",
+  "timestamp": "2026-10-10T21:42:57.027Z",
+  "searched": 3,
+  "accepted": 2,
+  "rejected": 1,
+  "duplicates": 0,
+  "accepted_items": [
+    {
+      "imdb_id": "tt4857264",
+      "type": "movie",
+      "title": "The Invisible Guest",
+      "match_score": 79
+    },
+    {
+      "imdb_id": "tt1937149",
+      "type": "movie",
+      "title": "The Body",
+      "match_score": 75
+    }
+  ],
+  "rejection_summary": [
+    {
+      "title": "The Vast of Night",
+      "type": "movie",
+      "year": 2019,
+      "imdb_id": "tt6803046",
+      "reason": "Strong sound-led UFO investigation and cinematic atmosphere, but complete-film reviews describe an intentionally slow, dialogue-heavy path of testimony and suggestions rather than frequent rule discoveries or layered explanatory reframings. The climactic encounter establishes the likely extraterrestrial nature of the signal but leaves the visitors' motives and mechanism mostly unexplained. Rejected qualitatively for this Mystery profile's whole-runtime answer/revelation emphasis, not because the anomalous premise or period visual style is unwelcome. Sources consulted: https://www.rogerebert.com/reviews/the-vast-of-night-movie-review-2020 ; https://www.deepfocusreview.com/reviews/the-vast-of-night/ ; https://www.theguardian.com/film/2020/jun/01/the-vast-of-night-review-twilight-zone-homage",
+      "category": "rejected"
+    }
+  ],
+  "publication": {
+    "schema_version": 1,
+    "daily_key": "mystery:2026-10-10",
+    "packet_hash": "9eb134f025e373b309f1c1450c74b979e76724893b3becb331e6e5f1864872f4",
+    "research_commit": "e8f718c7262191f2f5ef74afacff48653070b9ec",
+    "evaluated_base": "7f7c1cd2bcb0a0fce789a0f72ed36bbac3103d82",
+    "policy_fingerprint": "73a3e6f865292a217a3cf616dff811e8786d73efeb92402c3df8a9d694a32697"
+  }
+}
