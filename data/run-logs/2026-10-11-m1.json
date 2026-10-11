@@ -1,0 +1,48 @@
+{
+  "run_id": "2026-10-11-m1",
+  "timestamp": "2026-10-11T09:36:24.213Z",
+  "searched": 4,
+  "accepted": 2,
+  "rejected": 2,
+  "duplicates": 0,
+  "accepted_items": [
+    {
+      "imdb_id": "tt8485364",
+      "type": "movie",
+      "title": "The Room",
+      "match_score": 79
+    },
+    {
+      "imdb_id": "tt11847842",
+      "type": "series",
+      "title": "The Tourist",
+      "match_score": 72
+    }
+  ],
+  "rejection_summary": [
+    {
+      "title": "The Nines",
+      "type": "movie",
+      "year": 2007,
+      "imdb_id": "tt0810988",
+      "reason": "The three-part construction builds recurring nines and identity/reality anomalies, but the second Hollywood-production chapter diverts much of the runtime away from solving the question. Whole-film critical assessments from Slant and Metacritic describe a largely climactic metaphysical explanation with a payoff some found unconvincing. This does not provide sufficient confidence in sustained revelation cadence and progressive reframing despite its appealing simulated-reality premise.",
+      "category": "rejected"
+    },
+    {
+      "title": "The Resort",
+      "type": "series",
+      "year": 2022,
+      "imdb_id": "tt11897688",
+      "reason": "TVMaze and TV Guide episode guides confirm that the eight-episode missing-persons investigation does continue through the season and eventually finds Sam and Violet in Pasaje, so the premise is not abandoned. However, full-season reviews at Rotten Tomatoes, Metacritic and The Hollywood Reporter identify unsatisfied narrative questions, a mystical rather than clearly explained resolution, and an increasing emphasis on marriage, grief and time's emotional meaning. Insufficient confidence in explanatory payoff for Mystery's specific profile, despite its actual investigative activity.",
+      "category": "rejected"
+    }
+  ],
+  "publication": {
+    "schema_version": 1,
+    "daily_key": "mystery:2026-10-11",
+    "packet_hash": "c92b5ad6728004aee072d1b80c80ec766274b0ad08a11182797e7064629f7999",
+    "research_commit": "a3f42f5afaa7a23c961ecb6365918c21f313266a",
+    "evaluated_base": "4f426739b9a8cf4407c34875876e0f8d0a9e0fbd",
+    "policy_fingerprint": "73a3e6f865292a217a3cf616dff811e8786d73efeb92402c3df8a9d694a32697"
+  }
+}
