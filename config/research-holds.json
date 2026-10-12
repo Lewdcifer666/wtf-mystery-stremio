@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "holds": [
+    {
+      "daily_key": "mystery:2026-10-12",
+      "research_commit": "51802b675cd4da5aaa6ff4cb542a75d5e5f426a1",
+      "reason": "safety_denied"
+    }
+  ]
+}
