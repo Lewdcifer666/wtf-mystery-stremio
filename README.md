@@ -70,3 +70,8 @@ The overall remake also requires automatic private feedback interpretation and
 deterministic learning, an intentional cutover with genuinely recomputed state,
 and observed effects on later research. Publication stability alone does not
 complete that work or authorize personalization activation.
+
+Unstaged research branches remain explicitly incomplete / awaiting_research_packet
+in persisted reconciliation bundles. A main-derived empty ref creates no run log,
+discoveries, final counts or publication token. Missing research is not a successful
+zero-result run. Existing reviewed safety holds remain failed / requires_user_action.
