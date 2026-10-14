@@ -1,10 +1,10 @@
 # Daily Mystery Research
 
-Prepared for the later publication cutover. The saved task must first receive
-the research-only scope in `docs/publication-cutover.md`; this file cannot expand
-its authorization. Preserve the 11:30 Europe/Berlin schedule and task rotator.
-Do not activate before Thriller passes its publication acceptance gate.
-Feedback learning remains required subsequent migration work.
+The single runtime instruction block below applies to the deployed publication
+pipeline. The saved task must explicitly authorize research-branch writes; this
+file cannot expand its authorization. Preserve the 11:30 Europe/Berlin schedule,
+current task state and rotator. Private learning is inactive and its existing
+staging hold remains binding. Feedback learning remains required migration work.
 
 ```text
 Research Mystery movies and series for Lewdcifer666/wtf-mystery-stremio.

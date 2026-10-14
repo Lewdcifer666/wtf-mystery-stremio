@@ -45,13 +45,12 @@ npm run validate      # fail-closed validation of data/ against the profile
 npm run build         # build site/ (manifest + catalog JSON)
 ```
 
-## Prepared publication migration
+## Deployed publication migration
 
-The research packet pipeline is prepared for a later coordinated cutover.
-`RESEARCH_PUBLICATION_ENABLED` remains unset, and the saved 11:30 Europe/Berlin
-task and rotator remain unchanged. Complete Thriller's three-cycle publication
-acceptance gate before activating Mystery. Follow
-[the cutover procedure](docs/publication-cutover.md) when that gate passes.
+The research packet pipeline is deployed with `RESEARCH_PUBLICATION_ENABLED=true`.
+The historical Thriller publication acceptance gate has passed. The existing
+11:30 Europe/Berlin schedule, saved task state and rotator are preserved. See
+[publication state and the original cutover checklist](docs/publication-cutover.md).
 
 Research stages only `research-inbox/<date>.json` on `research/<date>-mystery`.
 Trusted-main workflows validate and finalize the packet, then use a scoped
