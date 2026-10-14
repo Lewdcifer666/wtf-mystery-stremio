@@ -1,14 +1,33 @@
 # Mystery publication cutover
 
-This branch is prepared and inactive. Keep `RESEARCH_PUBLICATION_ENABLED`
-unset and leave the saved task, schedule, rotator, credentials and repository
-settings unchanged until Thriller passes its three consecutive normal scheduled
-cycles and the zero-result, same-day retry, protected auto-merge, deployment and
-Stremio visibility gates. Draft PRs and fixture tests do not satisfy live gates.
+## Deployed publication state
 
-Before cutover, preserve current commit references, immutable history hashes,
-saved task text and repository settings. Recheck current main for new daily
-history and revalidate against it; never replace it with the preparation base.
+The research-packet publication pipeline is deployed in this repository.
+The October 14, 2026 settings audit confirmed RESEARCH_PUBLICATION_ENABLED=true,
+the publication environment restricted to main branches, strict required validate
+checks and the existing scoped wtf-thriller-publisher App. The authorized App
+installation covers Thriller, Action, Anime, Mystery, Sci-Fi and Fantasy only;
+it has no administration, workflow-write or private-feedback permission.
+
+Saved ChatGPT tasks stage only research packets; trusted-main GitHub Actions
+owns validation, scoring, immutable attempts, publication PRs and deployment.
+Task enabled states, schedules and the rotator remain governed by their current
+saved settings. A paused research task is not resumed by this document.
+
+Private learning remains inactive and its explicit staging hold remains binding.
+Existing research/legacy holds also remain in place. Publication success does not
+authorize replaying denied operations or completing the feedback-learning cutover.
+The saved-task example below documents the public scope only; it must not replace
+or remove the holds in an existing task.
+
+## Initial rollout checklist (reference)
+
+The steps below describe initial setup and its validation gates. Publication has
+already cut over; do not undo current settings or repeat activation from an old
+preparation base. Any later settings change still requires current,
+admin-capable classic-protection and applicable-rules inspection. Required private
+learning validation, explicit activation authorization and observed effects remain
+separate, incomplete work.
 
 1. Use an admin-capable identity to inspect classic `branches/main/protection`
    and applicable repository/inherited rulesets independently. Save required
