@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-10-17-m1",
+  "timestamp": "2026-10-17T09:34:16.197Z",
+  "items": [
+    {
+      "imdb_id": "tt0139809",
+      "type": "movie",
+      "title": "The Thirteenth Floor",
+      "year": 1999,
+      "reason": "A software developer suspected of murdering his mentor searches for a missing message inside a simulated 1937 Los Angeles. Across the complete film, the murder inquiry becomes a layered investigation of missing memories, doubles, the rules of simulated identities and the nature of the protagonist's own reality. Discoveries about the message, the bartender, a supposed daughter and the limits of the simulated environment successively reframe the case; the culprit and technological mechanism ultimately receive concrete answers. Its strongest fit is a sustained hidden-cause/reality puzzle rather than an ordinary whodunit. Weaknesses: some exposition and romance interrupt the investigation, revelations accelerate toward the last act, and contemporary critics disputed the logic of the resolution, characterization and pacing. Its period recreation is intentional, while some visual styling and effects visibly reflect an earlier production aesthetic; age itself is not a scoring input.",
+      "dna": {
+        "central_mystery": 9,
+        "mystery_density": 8,
+        "unexplained_phenomenon": 8,
+        "cause_uncertainty": 8,
+        "investigation": 7,
+        "clue_puzzling": 7,
+        "culprit_hunt": 6,
+        "progressive_revelation": 7,
+        "revelation_frequency": 6,
+        "plot_twists": 8,
+        "misdirection": 8,
+        "suspense": 7,
+        "hidden_truth": 9,
+        "conspiracy_coverup": 6,
+        "containment": 3,
+        "unknown_rules": 7,
+        "time_anomaly": 0,
+        "reality_uncertainty": 9,
+        "memory_identity_uncertainty": 8,
+        "scientific_cause": 8,
+        "supernatural_cause": 0,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 1,
+        "survival_pressure": 5,
+        "weirdness": 8,
+        "drama_focus": 4,
+        "romance_focus": 4,
+        "visual_quality": 7,
+        "retro_visual_style": 6,
+        "pace_speed": 6
+      },
+      "dna_confidence": 0.82,
+      "dna_tags": [
+        "secret_organization"
+      ],
+      "status": "watch",
+      "tags": [],
+      "match_score": 83,
+      "added_at": "2026-10-17T09:34:16.197Z",
+      "added_by": "daily-automation",
+      "discovery_run_id": "2026-10-17-m1",
+      "source": "https://www.imdb.com/title/tt0139809/ ; https://filmotomy.com/review-thirteenth-floor/ ; https://www.sfgate.com/news/article/virtual-characters-stuck-on-thirteenth-floor-3081435.php ; https://www.rottentomatoes.com/m/1089671-13th_floor"
+    }
+  ]
+}

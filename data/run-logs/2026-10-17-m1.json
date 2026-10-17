@@ -1,0 +1,50 @@
+{
+  "run_id": "2026-10-17-m1",
+  "timestamp": "2026-10-17T09:34:16.197Z",
+  "searched": 4,
+  "accepted": 1,
+  "rejected": 3,
+  "duplicates": 0,
+  "accepted_items": [
+    {
+      "imdb_id": "tt0139809",
+      "type": "movie",
+      "title": "The Thirteenth Floor",
+      "match_score": 83
+    }
+  ],
+  "rejection_summary": [
+    {
+      "title": "The Mandela Effect",
+      "type": "movie",
+      "year": 2019,
+      "imdb_id": "tt6544220",
+      "reason": "Its collective-memory discrepancies and simulation hypothesis create a promising reality mystery, but complete-film plot evidence and contemporary reviews describe extended grief and relationship material plus lengthy scientific exposition. The main explanation is presented through a scientist rather than earned through frequent independent discoveries; the final reset also prioritizes the family outcome. The premise is stronger than its sustained revelation cadence, so it is excluded qualitatively rather than assigning unjustified complete DNA measurements.",
+      "category": "rejected"
+    },
+    {
+      "title": "Fractured",
+      "type": "movie",
+      "year": 2019,
+      "imdb_id": "tt4332232",
+      "reason": "The disappearance of a wife and child inside a hospital is a compelling sustained question, but full-film evidence and substantive reviews describe repetitive confrontations and searches with few genuinely reframing discoveries until the decisive late psychological reversal. The ending's logic and fairness are sharply disputed, so investigation intensity alone does not establish the progressive answers and payoff needed for a confident Mystery candidate.",
+      "category": "rejected"
+    },
+    {
+      "title": "The Forgotten",
+      "type": "movie",
+      "year": 2004,
+      "imdb_id": "tt0356618",
+      "reason": "Erased memories of a missing child begin as a strong unknown-cause puzzle, but full-film plot evidence and substantive criticism show that the story shifts heavily into pursuit, parental grief and an eventual alien-experiment explanation with underdeveloped internal logic. Important answers arrive by late exposition rather than sustained deduction, and the final restoration leaves causal questions open. Excluded for weak explanatory progression and payoff despite the intriguing premise.",
+      "category": "rejected"
+    }
+  ],
+  "publication": {
+    "schema_version": 1,
+    "daily_key": "mystery:2026-10-17",
+    "packet_hash": "bfb16d690b4bfe58ad2635c12558a49774c08447a5905d2912ef227a8df880a3",
+    "research_commit": "b29764669d4709545fb2bf1df88e3242421ab6d1",
+    "evaluated_base": "7e0dbf99eeed54a834f3b9739aa4b3d07ef92f6a",
+    "policy_fingerprint": "d40edd2274ed6ded31b37a35ac77f75a10da01424951c1c3909785b4b58841b7"
+  }
+}
