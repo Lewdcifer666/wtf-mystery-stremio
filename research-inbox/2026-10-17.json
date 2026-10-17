@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "genre": "mystery",
+  "research_date": "2026-10-17",
+  "candidates": [
+    {
+      "imdb_id": "tt0139809",
+      "type": "movie",
+      "title": "The Thirteenth Floor",
+      "year": 1999,
+      "reason": "A software developer suspected of murdering his mentor searches for a missing message inside a simulated 1937 Los Angeles. Across the complete film, the murder inquiry becomes a layered investigation of missing memories, doubles, the rules of simulated identities and the nature of the protagonist's own reality. Discoveries about the message, the bartender, a supposed daughter and the limits of the simulated environment successively reframe the case; the culprit and technological mechanism ultimately receive concrete answers. Its strongest fit is a sustained hidden-cause/reality puzzle rather than an ordinary whodunit. Weaknesses: some exposition and romance interrupt the investigation, revelations accelerate toward the last act, and contemporary critics disputed the logic of the resolution, characterization and pacing. Its period recreation is intentional, while some visual styling and effects visibly reflect an earlier production aesthetic; age itself is not a scoring input.",
+      "sources": [
+        {
+          "url": "https://www.imdb.com/title/tt0139809/",
+          "purpose": "identity"
+        },
+        {
+          "url": "https://filmotomy.com/review-thirteenth-floor/",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://www.sfgate.com/news/article/virtual-characters-stuck-on-thirteenth-floor-3081435.php",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.rottentomatoes.com/m/1089671-13th_floor",
+          "purpose": "review"
+        }
+      ],
+      "dna": {
+        "central_mystery": 9,
+        "mystery_density": 8,
+        "unexplained_phenomenon": 8,
+        "cause_uncertainty": 8,
+        "investigation": 7,
+        "clue_puzzling": 7,
+        "culprit_hunt": 6,
+        "progressive_revelation": 7,
+        "revelation_frequency": 6,
+        "plot_twists": 8,
+        "misdirection": 8,
+        "suspense": 7,
+        "hidden_truth": 9,
+        "conspiracy_coverup": 6,
+        "containment": 3,
+        "unknown_rules": 7,
+        "time_anomaly": 0,
+        "reality_uncertainty": 9,
+        "memory_identity_uncertainty": 8,
+        "scientific_cause": 8,
+        "supernatural_cause": 0,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 1,
+        "survival_pressure": 5,
+        "weirdness": 8,
+        "drama_focus": 4,
+        "romance_focus": 4,
+        "visual_quality": 7,
+        "retro_visual_style": 6,
+        "pace_speed": 6
+      },
+      "dna_confidence": 0.82,
+      "dna_tags": [
+        "secret_organization"
+      ]
+    }
+  ],
+  "research_rejections": [
+    {
+      "title": "The Mandela Effect",
+      "type": "movie",
+      "year": 2019,
+      "imdb_id": "tt6544220",
+      "reason": "Its collective-memory discrepancies and simulation hypothesis create a promising reality mystery, but complete-film plot evidence and contemporary reviews describe extended grief and relationship material plus lengthy scientific exposition. The main explanation is presented through a scientist rather than earned through frequent independent discoveries; the final reset also prioritizes the family outcome. The premise is stronger than its sustained revelation cadence, so it is excluded qualitatively rather than assigning unjustified complete DNA measurements."
+    },
+    {
+      "title": "Fractured",
+      "type": "movie",
+      "year": 2019,
+      "imdb_id": "tt4332232",
+      "reason": "The disappearance of a wife and child inside a hospital is a compelling sustained question, but full-film evidence and substantive reviews describe repetitive confrontations and searches with few genuinely reframing discoveries until the decisive late psychological reversal. The ending's logic and fairness are sharply disputed, so investigation intensity alone does not establish the progressive answers and payoff needed for a confident Mystery candidate."
+    },
+    {
+      "title": "The Forgotten",
+      "type": "movie",
+      "year": 2004,
+      "imdb_id": "tt0356618",
+      "reason": "Erased memories of a missing child begin as a strong unknown-cause puzzle, but full-film plot evidence and substantive criticism show that the story shifts heavily into pursuit, parental grief and an eventual alien-experiment explanation with underdeveloped internal logic. Important answers arrive by late exposition rather than sustained deduction, and the final restoration leaves causal questions open. Excluded for weak explanatory progression and payoff despite the intriguing premise."
+    }
+  ]
+}
