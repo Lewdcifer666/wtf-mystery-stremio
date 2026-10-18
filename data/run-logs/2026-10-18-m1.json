@@ -1,0 +1,48 @@
+{
+  "run_id": "2026-10-18-m1",
+  "timestamp": "2026-10-18T09:31:37.782Z",
+  "searched": 4,
+  "accepted": 2,
+  "rejected": 2,
+  "duplicates": 0,
+  "accepted_items": [
+    {
+      "imdb_id": "tt5791732",
+      "type": "movie",
+      "title": "The Laplace's Demon",
+      "match_score": 83
+    },
+    {
+      "imdb_id": "tt1525890",
+      "type": "movie",
+      "title": "The Caller",
+      "match_score": 76
+    }
+  ],
+  "rejection_summary": [
+    {
+      "title": "The Fare",
+      "type": "movie",
+      "year": 2018,
+      "imdb_id": "tt7293920",
+      "reason": "The disappearing passenger and apparently repeating taxi ride create a strong initial unknown-rules question, and the complete-film account does reveal why the journey repeats. However, substantial portions of the runtime are conversations about the two characters' love, regrets and relationship, and the ultimate explanation reframes the film as a mythological romance. Multiple reviews explicitly emphasize the romantic final act and feature-length stretching of a shorter conceit. Qualitatively excluded because romance and emotional resolution dominate too much of the available runtime evidence for a confident sustained-revelation Mystery recommendation.",
+      "category": "rejected"
+    },
+    {
+      "title": "The Kid Detective",
+      "type": "movie",
+      "year": 2020,
+      "imdb_id": "tt8980602",
+      "reason": "The protagonist conducts a real murder investigation and an earlier disappearance has a concrete, dark answer. Nevertheless, substantial complete-film criticism describes a deliberately meandering, melancholy comic-drama middle and the main recontextualizing revelation concentrated in the last twenty minutes. That is not sufficient evidence of frequent progressive explanatory turns across the whole runtime, so it is excluded qualitatively rather than given falsely precise 30-dimension measurements.",
+      "category": "rejected"
+    }
+  ],
+  "publication": {
+    "schema_version": 1,
+    "daily_key": "mystery:2026-10-18",
+    "packet_hash": "e01354d4c6aa5e03da0f51e74b8aa6236d7844b2dcc36307ce53b1f2e1e13c6a",
+    "research_commit": "8ff5139300643fbc82f07731da9b537094b42c01",
+    "evaluated_base": "1f890882e3d662eb359b189a873b014fc2a66f75",
+    "policy_fingerprint": "d40edd2274ed6ded31b37a35ac77f75a10da01424951c1c3909785b4b58841b7"
+  }
+}
