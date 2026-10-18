@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "genre": "mystery",
+  "research_date": "2026-10-18",
+  "candidates": [
+    {
+      "imdb_id": "tt5791732",
+      "type": "movie",
+      "title": "The Laplace's Demon",
+      "year": 2017,
+      "reason": "Eight visitors, most of them researchers in mathematical prediction, are confined inside an isolated mansion whose scale model tracks their movements. A prerecorded host apparently anticipates their questions, a chess-piece-like mechanism marks their deaths, and the survivors test whether they can defy a predictive formula. Across the complete film, the questions about the host, the model, the deadly device and the experiment's true purpose remain active; investigation of its rules produces intermediate discoveries, with the host's identity and the deterministic scheme resolved in the final act. The film combines an impossible-seeming mechanism, containment, clue testing and survival pressure without making a ghost haunting its main engine. Weaknesses are important: its final identity reversal and philosophical payoff are disputed, some character decisions and the predictive premise strain plausibility, and reviewers disagree sharply about amateur performances and crude digital compositing. Its deliberately monochrome, mid-century Gothic/noir presentation earns a high retro-style measurement because of the actual visual style, not because of release year.",
+      "sources": [
+        {
+          "url": "https://www.imdb.com/title/tt5791732/",
+          "purpose": "identity"
+        },
+        {
+          "url": "https://culturecrypt.com/movie-reviews/the-laplaces-demon-2017",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://www.eyeforfilm.co.uk/review/the-laplaces-demon-2017-film-review-by-jennie-kermode",
+          "purpose": "structure"
+        },
+        {
+          "url": "https://morbidlybeautiful.com/reel-review-laplaces-demon/",
+          "purpose": "review"
+        }
+      ],
+      "dna": {
+        "central_mystery": 9,
+        "mystery_density": 8,
+        "unexplained_phenomenon": 8,
+        "cause_uncertainty": 9,
+        "investigation": 6,
+        "clue_puzzling": 8,
+        "culprit_hunt": 4,
+        "progressive_revelation": 7,
+        "revelation_frequency": 7,
+        "plot_twists": 7,
+        "misdirection": 7,
+        "suspense": 8,
+        "hidden_truth": 9,
+        "conspiracy_coverup": 3,
+        "containment": 9,
+        "unknown_rules": 9,
+        "time_anomaly": 0,
+        "reality_uncertainty": 3,
+        "memory_identity_uncertainty": 0,
+        "scientific_cause": 8,
+        "supernatural_cause": 0,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 5,
+        "survival_pressure": 8,
+        "weirdness": 8,
+        "drama_focus": 2,
+        "romance_focus": 0,
+        "visual_quality": 6,
+        "retro_visual_style": 8,
+        "pace_speed": 6
+      },
+      "dna_confidence": 0.79,
+      "dna_tags": [
+        "sealed_barrier",
+        "island_or_remote",
+        "human_experiment"
+      ]
+    },
+    {
+      "imdb_id": "tt1525890",
+      "type": "movie",
+      "title": "The Caller",
+      "year": 2011,
+      "reason": "A woman living in an old apartment discovers that telephone calls from a stranger connect her present to 1979. Rather than remaining a single unexplained hook, the film repeatedly tests and escalates the causal rules: marks appear in walls, photographs change, acquaintances vanish from the revised timeline, and the caller targets the protagonist's younger self. The protagonist investigates the caller's history, physical evidence and the consequences of altering the past, leading to a concrete confrontation. The mystery and time-anomaly mechanics remain active through most of the runtime, although this is as much a supernatural revenge/horror thriller as a deductive mystery. Weaknesses include substantial abusive-relationship drama, reliance on threat and scares, a dark low-budget look, and disputed temporal logic; contemporary reviewers criticized plot conveniences and the credibility of the final explanation. Its high paranormal-horror and horror-focus DNA measurements reflect those limitations rather than concealing them.",
+      "sources": [
+        {
+          "url": "https://www.imdb.com/title/tt1525890/",
+          "purpose": "identity"
+        },
+        {
+          "url": "https://www.imdb.com/title/tt1525890/plotsummary/",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://www.horrorguys.com/the-caller-2011-review/",
+          "purpose": "structure"
+        },
+        {
+          "url": "https://www.dreadcentral.com/reviews/26435/caller-the-2011/",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.rottentomatoes.com/m/the_caller",
+          "purpose": "review"
+        }
+      ],
+      "dna": {
+        "central_mystery": 8,
+        "mystery_density": 7,
+        "unexplained_phenomenon": 8,
+        "cause_uncertainty": 8,
+        "investigation": 6,
+        "clue_puzzling": 6,
+        "culprit_hunt": 6,
+        "progressive_revelation": 7,
+        "revelation_frequency": 7,
+        "plot_twists": 8,
+        "misdirection": 6,
+        "suspense": 8,
+        "hidden_truth": 8,
+        "conspiracy_coverup": 0,
+        "containment": 5,
+        "unknown_rules": 7,
+        "time_anomaly": 9,
+        "reality_uncertainty": 6,
+        "memory_identity_uncertainty": 6,
+        "scientific_cause": 0,
+        "supernatural_cause": 8,
+        "paranormal_horror_focus": 6,
+        "horror_focus": 7,
+        "survival_pressure": 6,
+        "weirdness": 7,
+        "drama_focus": 5,
+        "romance_focus": 3,
+        "visual_quality": 5,
+        "retro_visual_style": 5,
+        "pace_speed": 7
+      },
+      "dna_confidence": 0.76,
+      "dna_tags": [
+        "haunting"
+      ]
+    }
+  ],
+  "research_rejections": [
+    {
+      "title": "The Fare",
+      "type": "movie",
+      "year": 2018,
+      "imdb_id": "tt7293920",
+      "reason": "The disappearing passenger and apparently repeating taxi ride create a strong initial unknown-rules question, and the complete-film account does reveal why the journey repeats. However, substantial portions of the runtime are conversations about the two characters' love, regrets and relationship, and the ultimate explanation reframes the film as a mythological romance. Multiple reviews explicitly emphasize the romantic final act and feature-length stretching of a shorter conceit. Qualitatively excluded because romance and emotional resolution dominate too much of the available runtime evidence for a confident sustained-revelation Mystery recommendation."
+    },
+    {
+      "title": "The Kid Detective",
+      "type": "movie",
+      "year": 2020,
+      "imdb_id": "tt8980602",
+      "reason": "The protagonist conducts a real murder investigation and an earlier disappearance has a concrete, dark answer. Nevertheless, substantial complete-film criticism describes a deliberately meandering, melancholy comic-drama middle and the main recontextualizing revelation concentrated in the last twenty minutes. That is not sufficient evidence of frequent progressive explanatory turns across the whole runtime, so it is excluded qualitatively rather than given falsely precise 30-dimension measurements."
+    }
+  ]
+}
