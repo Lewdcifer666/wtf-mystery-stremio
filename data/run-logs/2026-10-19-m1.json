@@ -1,0 +1,56 @@
+{
+  "run_id": "2026-10-19-m1",
+  "timestamp": "2026-10-19T10:01:00.951Z",
+  "searched": 5,
+  "accepted": 2,
+  "rejected": 3,
+  "duplicates": 0,
+  "accepted_items": [
+    {
+      "imdb_id": "tt8201186",
+      "type": "series",
+      "title": "The Capture",
+      "match_score": 88
+    },
+    {
+      "imdb_id": "tt10147644",
+      "type": "series",
+      "title": "The Innocent",
+      "match_score": 76
+    }
+  ],
+  "rejection_summary": [
+    {
+      "title": "A Perfect Getaway",
+      "type": "movie",
+      "year": 2009,
+      "imdb_id": "tt0971209",
+      "reason": "The suspicion over which Hawaiian hiking couple is responsible for murders sustains suspense, but whole-film reviews describe a guessing game built chiefly around one delayed identity reversal and an extended explanatory flashback. The final third becomes a more conventional violent survival/slasher chase, with some critics questioning the twist's fairness and underlying motives. Without convincing evidence of repeated independent discoveries and progressive reframing across the runtime, it is a qualitative exclusion rather than a confident 30-dimensional candidate.",
+      "category": "rejected"
+    },
+    {
+      "title": "The Tall Man",
+      "type": "movie",
+      "year": 2012,
+      "imdb_id": "tt1658837",
+      "reason": "The missing-children legend and a mother's frantic search provide an initially strong hidden-cause mystery. Full-film plot accounts and contemporary criticism show major late reversals that reveal a human child-relocation operation, but the last movement shifts strongly toward a social and ethical argument about poverty and parenting. Critics dispute the plausibility of its conspiracy and narrative misdirection; the explanatory progression is too concentrated in large turns for confident sustained-cadence acceptance.",
+      "category": "rejected"
+    },
+    {
+      "title": "Parallel",
+      "type": "movie",
+      "year": 2018,
+      "imdb_id": "tt4922674",
+      "reason": "The hidden mirror portal has interesting time-dilation and alternate-world rules, but the complete-film account shows the characters quickly learning the portal's basic function and spending much of the middle exploiting it for money, art and technology, followed by interpersonal betrayal and violent doubles. Substantive criticism notes muddled tonal changes and a weak late reversal. Its premise and final identity ambiguity outpace the evidence for an actively investigated, repeatedly answered central mystery throughout the film.",
+      "category": "rejected"
+    }
+  ],
+  "publication": {
+    "schema_version": 1,
+    "daily_key": "mystery:2026-10-19",
+    "packet_hash": "39dff299b69c5796e6d46fd85856245c19476b00ca1ec2f5309c2515f79eaa82",
+    "research_commit": "efbb898f73e13316f7e71243550e0da661c8ab3a",
+    "evaluated_base": "0e66ba8c68f3e15eedce67b5ccb59ed0241692b4",
+    "policy_fingerprint": "d40edd2274ed6ded31b37a35ac77f75a10da01424951c1c3909785b4b58841b7"
+  }
+}
