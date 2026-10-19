@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "genre": "mystery",
+  "research_date": "2026-10-19",
+  "candidates": [
+    {
+      "imdb_id": "tt8201186",
+      "type": "series",
+      "title": "The Capture",
+      "year": 2019,
+      "reason": "Across all three broadcast seasons, detective Rachel Carey investigates seemingly incontrovertible CCTV evidence that conflicts with testimony and eyewitness observation. The first season moves from a soldier's apparent abduction case to the hidden 'Correction' video-fabrication programme; the second uses an apparently invisible killing and a politician's manipulated broadcasts to uncover a broader intelligence-and-data conspiracy; the third tests an anti-deepfake system after a political assassination, with successive clues about compromised officers, the identity of Simon and the purpose of the operation. The episode guides show new evidence, suspects, reversals and explanatory discoveries distributed through each season, rather than a single pilot hook or a conventional case that never advances. Its strengths are sustained cause uncertainty, technological rule discovery, deceptive images, layered institutional cover-ups and repeated consequential reveals. Weaknesses: it is a grounded cyber-conspiracy procedural rather than an impossible-world puzzle, some security technology and operations strain plausibility, character and political drama occupy a meaningful share, and the third-season climax is complex and morally unresolved despite answering the immediate case. The three-season assessment is based on actual episode descriptions and substantive retrospective and contemporary reviews.",
+      "sources": [
+        {
+          "url": "https://www.imdb.com/title/tt8201186/",
+          "purpose": "identity"
+        },
+        {
+          "url": "https://www.tvmaze.com/shows/35512/the-capture/episodeguide",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://www.denofgeek.com/tv/the-capture-series-1-recap-shaun-emery-innocent-deepfake-correction-frank-napier/",
+          "purpose": "structure"
+        },
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/2022/sep/12/how-the-capture-became-the-years-most-wildly-compelling-tv-show",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/2026/mar/08/the-capture-review-this-juicy-return-for-the-deepfake-conspiracy-thriller-is-full-of-truly-outrageous-twists",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.the-independent.com/arts-entertainment/tv/news/the-capture-season-3-bbc-b2956455.html",
+          "purpose": "structure"
+        }
+      ],
+      "dna": {
+        "central_mystery": 9,
+        "mystery_density": 8,
+        "unexplained_phenomenon": 6,
+        "cause_uncertainty": 8,
+        "investigation": 8,
+        "clue_puzzling": 7,
+        "culprit_hunt": 6,
+        "progressive_revelation": 8,
+        "revelation_frequency": 8,
+        "plot_twists": 9,
+        "misdirection": 9,
+        "suspense": 9,
+        "hidden_truth": 9,
+        "conspiracy_coverup": 10,
+        "containment": 1,
+        "unknown_rules": 7,
+        "time_anomaly": 0,
+        "reality_uncertainty": 8,
+        "memory_identity_uncertainty": 3,
+        "scientific_cause": 9,
+        "supernatural_cause": 0,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 2,
+        "survival_pressure": 5,
+        "weirdness": 6,
+        "drama_focus": 5,
+        "romance_focus": 1,
+        "visual_quality": 8,
+        "retro_visual_style": 0,
+        "pace_speed": 8
+      },
+      "dna_confidence": 0.87,
+      "dna_tags": [
+        "secret_organization",
+        "detective_lead",
+        "human_experiment"
+      ]
+    },
+    {
+      "imdb_id": "tt10147644",
+      "type": "series",
+      "title": "The Innocent",
+      "year": 2021,
+      "reason": "This complete eight-episode Spanish miniseries follows Mateo's attempt to understand a threatening call and his wife Olivia's disappearance while detective Lorena separately investigates a nun's suspicious death and hidden identity. The TVMaze episode sequence shows the seemingly unrelated cases converging: a private investigator locates leads, authorities seize evidence, Olivia's confession overturns assumptions, a compromised investigation exposes further concealment, and the final episode identifies the person behind Mateo's renewed persecution. Whole-season criticism describes an unusually fast cadence of twists throughout episodes, supported by shifting viewpoints and interlocking past crimes, rather than merely one last-minute trick. Its strongest fit is dense culprit-and-hidden-truth investigation, misdirection, progressive revelation and suspense. Weaknesses: the elaborate connections and coincidences can feel implausible, criminal melodrama and past relationship trauma are substantial, and the story has no actual time/reality anomaly or unexplained supernatural mechanism. The DNA therefore measures its whodunit/conspiracy structure rather than inventing impossible phenomena.",
+      "sources": [
+        {
+          "url": "https://www.imdb.com/title/tt10147644/",
+          "purpose": "identity"
+        },
+        {
+          "url": "https://www.tvmaze.com/shows/41639/el-inocente/episodeguide",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://www.nme.com/reviews/tv-reviews/the-innocent-review-netflix-2931331",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.rottentomatoes.com/tv/the_innocent/s01",
+          "purpose": "structure"
+        },
+        {
+          "url": "https://www.serienjunkies.de/news/serien/netflix-geheimtipp-thriller-serie-the-innocent-von-harlan-coben-94186540.html",
+          "purpose": "review"
+        }
+      ],
+      "dna": {
+        "central_mystery": 9,
+        "mystery_density": 9,
+        "unexplained_phenomenon": 0,
+        "cause_uncertainty": 8,
+        "investigation": 8,
+        "clue_puzzling": 7,
+        "culprit_hunt": 7,
+        "progressive_revelation": 8,
+        "revelation_frequency": 9,
+        "plot_twists": 9,
+        "misdirection": 8,
+        "suspense": 9,
+        "hidden_truth": 9,
+        "conspiracy_coverup": 7,
+        "containment": 1,
+        "unknown_rules": 0,
+        "time_anomaly": 0,
+        "reality_uncertainty": 2,
+        "memory_identity_uncertainty": 6,
+        "scientific_cause": 0,
+        "supernatural_cause": 0,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 3,
+        "survival_pressure": 5,
+        "weirdness": 4,
+        "drama_focus": 5,
+        "romance_focus": 4,
+        "visual_quality": 8,
+        "retro_visual_style": 0,
+        "pace_speed": 9
+      },
+      "dna_confidence": 0.85,
+      "dna_tags": [
+        "disappearance",
+        "detective_lead",
+        "secret_organization"
+      ]
+    }
+  ],
+  "research_rejections": [
+    {
+      "title": "A Perfect Getaway",
+      "type": "movie",
+      "year": 2009,
+      "imdb_id": "tt0971209",
+      "reason": "The suspicion over which Hawaiian hiking couple is responsible for murders sustains suspense, but whole-film reviews describe a guessing game built chiefly around one delayed identity reversal and an extended explanatory flashback. The final third becomes a more conventional violent survival/slasher chase, with some critics questioning the twist's fairness and underlying motives. Without convincing evidence of repeated independent discoveries and progressive reframing across the runtime, it is a qualitative exclusion rather than a confident 30-dimensional candidate."
+    },
+    {
+      "title": "The Tall Man",
+      "type": "movie",
+      "year": 2012,
+      "imdb_id": "tt1658837",
+      "reason": "The missing-children legend and a mother's frantic search provide an initially strong hidden-cause mystery. Full-film plot accounts and contemporary criticism show major late reversals that reveal a human child-relocation operation, but the last movement shifts strongly toward a social and ethical argument about poverty and parenting. Critics dispute the plausibility of its conspiracy and narrative misdirection; the explanatory progression is too concentrated in large turns for confident sustained-cadence acceptance."
+    },
+    {
+      "title": "Parallel",
+      "type": "movie",
+      "year": 2018,
+      "imdb_id": "tt4922674",
+      "reason": "The hidden mirror portal has interesting time-dilation and alternate-world rules, but the complete-film account shows the characters quickly learning the portal's basic function and spending much of the middle exploiting it for money, art and technology, followed by interpersonal betrayal and violent doubles. Substantive criticism notes muddled tonal changes and a weak late reversal. Its premise and final identity ambiguity outpace the evidence for an actively investigated, repeatedly answered central mystery throughout the film."
+    }
+  ]
+}
