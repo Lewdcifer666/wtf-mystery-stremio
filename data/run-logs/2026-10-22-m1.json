@@ -1,0 +1,40 @@
+{
+  "run_id": "2026-10-22-m1",
+  "timestamp": "2026-10-22T09:27:58.409Z",
+  "searched": 3,
+  "accepted": 2,
+  "rejected": 1,
+  "duplicates": 0,
+  "accepted_items": [
+    {
+      "imdb_id": "tt0450340",
+      "type": "movie",
+      "title": "Unknown",
+      "match_score": 84
+    },
+    {
+      "imdb_id": "tt14140886",
+      "type": "series",
+      "title": "The 7 Lives of Lea",
+      "match_score": 83
+    }
+  ],
+  "rejection_summary": [
+    {
+      "title": "The I-Land",
+      "type": "series",
+      "year": 2019,
+      "imdb_id": "tt9067020",
+      "reason": "The seven-episode island/amnesia premise initially promises a trapped-world rules mystery, but the episode guide shows the basic truth about the island disclosed by episode three. Later episodes concentrate on prisoners' histories, violence, institutional conflict and escape, rather than sustained discovery of an unknown phenomenon. Substantive full-season criticism identifies confused plotting and weak narrative payoff, making the opening premise a poor proxy for mystery density and progressive revelation. Excluded qualitatively rather than inventing complete DNA measurements.",
+      "category": "rejected"
+    }
+  ],
+  "publication": {
+    "schema_version": 1,
+    "daily_key": "mystery:2026-10-22",
+    "packet_hash": "495cb9a8ecfc08eda90fc190b13c277250b4fde109a2c45cd5214531e0dea1dd",
+    "research_commit": "650de55834c673c11b51f3ae10a859f5aca813e4",
+    "evaluated_base": "ae3e95443b24226baa7cff8612c5c2b471b066f1",
+    "policy_fingerprint": "d40edd2274ed6ded31b37a35ac77f75a10da01424951c1c3909785b4b58841b7"
+  }
+}
