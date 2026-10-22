@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "genre": "mystery",
+  "research_date": "2026-10-22",
+  "candidates": [
+    {
+      "imdb_id": "tt14140886",
+      "type": "series",
+      "title": "The 7 Lives of Lea",
+      "year": 2022,
+      "reason": "Across the complete seven-episode French miniseries, Léa finds the remains of Ismaël, who died in 1991, and repeatedly wakes up in the bodies of different people who knew him during his final week. Each episode advances the death investigation from a new perspective: family photographs, an old notebook, a changed future, a suspected bully, a concealed gun, Patricia's past and Stéphane's hidden relationship progressively revise who could have killed Ismaël. The TVMaze episode guide confirms that discoveries and attempted interventions continue through episodes two to six, while the finale reconstructs the river incident and makes Léa choose whether to alter the timeline at the cost of her own existence. Strengths are a sustained hidden-cause investigation, meaningful time/body-swap rules, shifting suspects and a concrete answer to the original death. Weaknesses: considerable teen and family relationship drama, some romantic subplots, occasional slower stretches and a sacrifice-centered emotional ending; the unexplained origin of Léa's time travel is not itself resolved. Period scenes are an intentional setting, not evidence that the production has outdated visual craft.",
+      "sources": [
+        {
+          "url": "https://www.imdb.com/title/tt14140886/",
+          "purpose": "identity"
+        },
+        {
+          "url": "https://www.tvmaze.com/shows/54394/les-7-vies-de-lea/episodeguide",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://www.ottplay.com/review/the-7-lives-of-lea-review-french-netflix-series-brings-novelty-to-body-swap-and-time-travel-tropes/8932257d14935",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.rottentomatoes.com/tv/the_7_lives_of_lea/s01",
+          "purpose": "structure"
+        },
+        {
+          "url": "https://theenvoyweb.com/explainers/the-7-lives-of-lea-2022-summary-end/",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://wordstreetjournal.com/the-7-lives-of-lea-review-this-french-show-is-no-pushover-given-you-dont-compare-it-with-dark/",
+          "purpose": "review"
+        }
+      ],
+      "dna": {
+        "central_mystery": 8,
+        "mystery_density": 7,
+        "unexplained_phenomenon": 8,
+        "cause_uncertainty": 8,
+        "investigation": 7,
+        "clue_puzzling": 7,
+        "culprit_hunt": 7,
+        "progressive_revelation": 8,
+        "revelation_frequency": 7,
+        "plot_twists": 7,
+        "misdirection": 7,
+        "suspense": 7,
+        "hidden_truth": 8,
+        "conspiracy_coverup": 1,
+        "containment": 2,
+        "unknown_rules": 7,
+        "time_anomaly": 9,
+        "reality_uncertainty": 6,
+        "memory_identity_uncertainty": 8,
+        "scientific_cause": 0,
+        "supernatural_cause": 9,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 1,
+        "survival_pressure": 4,
+        "weirdness": 8,
+        "drama_focus": 6,
+        "romance_focus": 5,
+        "visual_quality": 8,
+        "retro_visual_style": 2,
+        "pace_speed": 6
+      },
+      "dna_confidence": 0.82,
+      "dna_tags": [
+        "parallel_timeline"
+      ]
+    },
+    {
+      "imdb_id": "tt0450340",
+      "type": "movie",
+      "title": "Unknown",
+      "year": 2006,
+      "reason": "Five men wake inside a sealed chemical warehouse with no memory of their names, allegiances or involvement in a kidnapping. The 85-minute film keeps the identity puzzle active through objects found in the warehouse, a newspaper account, phone calls, partial memory flashes, shifting alliances and parallel police inquiries. The return of the kidnapping gang changes the apparent roles of victim and criminal; further recollections expose an undercover operation and a final concealed personal motive. The amnesia is ultimately given a natural chemical cause, not a literal reality or time anomaly. Strengths are sustained closed-room uncertainty, evidence-based suspicion and several meaningful identity reversals. Weaknesses: critics dispute the credibility of the stacked late twists, some characterization is thin, the ending relies on convenient recovered memories and the music-video-like cutting and flashbacks can feel stylistically dated. The visual-style estimate concerns the film's actual presentation, not its release year.",
+      "sources": [
+        {
+          "url": "https://www.imdb.com/title/tt0450340/",
+          "purpose": "identity"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Unknown_%282006_film%29",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://www.washingtonpost.com/archive/lifestyle/2006/12/15/into-the-great-unknown/530788ff-d61f-4fed-bb89-8dace4c2813f/",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.theguardian.com/film/2007/apr/15/drama.philipfrench",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.rottentomatoes.com/m/unknown",
+          "purpose": "structure"
+        },
+        {
+          "url": "https://www.slantmagazine.com/film/unknown-2524/",
+          "purpose": "review"
+        }
+      ],
+      "dna": {
+        "central_mystery": 9,
+        "mystery_density": 8,
+        "unexplained_phenomenon": 7,
+        "cause_uncertainty": 8,
+        "investigation": 7,
+        "clue_puzzling": 7,
+        "culprit_hunt": 7,
+        "progressive_revelation": 7,
+        "revelation_frequency": 7,
+        "plot_twists": 8,
+        "misdirection": 9,
+        "suspense": 8,
+        "hidden_truth": 8,
+        "conspiracy_coverup": 3,
+        "containment": 9,
+        "unknown_rules": 4,
+        "time_anomaly": 0,
+        "reality_uncertainty": 5,
+        "memory_identity_uncertainty": 10,
+        "scientific_cause": 5,
+        "supernatural_cause": 0,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 2,
+        "survival_pressure": 7,
+        "weirdness": 6,
+        "drama_focus": 2,
+        "romance_focus": 1,
+        "visual_quality": 6,
+        "retro_visual_style": 5,
+        "pace_speed": 8
+      },
+      "dna_confidence": 0.79,
+      "dna_tags": [
+        "amnesia",
+        "sealed_barrier",
+        "closed_circle"
+      ]
+    }
+  ],
+  "research_rejections": [
+    {
+      "title": "The I-Land",
+      "type": "series",
+      "year": 2019,
+      "imdb_id": "tt9067020",
+      "reason": "The seven-episode island/amnesia premise initially promises a trapped-world rules mystery, but the episode guide shows the basic truth about the island disclosed by episode three. Later episodes concentrate on prisoners' histories, violence, institutional conflict and escape, rather than sustained discovery of an unknown phenomenon. Substantive full-season criticism identifies confused plotting and weak narrative payoff, making the opening premise a poor proxy for mystery density and progressive revelation. Excluded qualitatively rather than inventing complete DNA measurements."
+    }
+  ]
+}
