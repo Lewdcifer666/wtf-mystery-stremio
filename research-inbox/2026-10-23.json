@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "genre": "mystery",
+  "research_date": "2026-10-23",
+  "candidates": [
+    {
+      "imdb_id": "tt14577874",
+      "type": "movie",
+      "title": "It's What's Inside",
+      "year": 2024,
+      "reason": "At a pre-wedding reunion, a device swaps eight friends' consciousnesses into different bodies. Its rules are demonstrated early, so the device itself is not a sustained unexplained-origin puzzle; the active mystery becomes which person occupies each body, who is lying about a swap, and who is secretly directing the game. Identification photos, conflicting claims, a concealed old grievance, a fatal balcony accident, disputed ownership of surviving bodies and a final machine operation repeatedly change the apparent identities and motives. The final coda identifies the concealed manipulator and accounts for the displaced survivors, providing an intelligible identity/revenge solution while leaving some consequences unresolved. Strengths are audience-participatory identity deduction, misdirection, quick reversals, modern visual storytelling and escalating stakes. Weaknesses: substantial jealousy and relationship conflict, an opening social-drama setup, deliberately confusing swaps, thin secondary characterization, and a final explanation that some substantive critics consider hurried or emotionally unearned. No actual time anomaly or paranormal cause is established; the mechanism is speculative technology.",
+      "sources": [
+        {
+          "url": "https://www.imdb.com/title/tt14577874/",
+          "purpose": "identity"
+        },
+        {
+          "url": "https://www.imdb.com/title/tt14577874/plotsummary/",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://www.rogerebert.com/reviews/its-whats-inside-netflix-film-review",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.slantmagazine.com/film/its-whats-inside-review-greg-jardin/",
+          "purpose": "structure"
+        },
+        {
+          "url": "https://www.netflix.com/tudum/articles/its-whats-inside-ending-explained",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://www.theguardian.com/film/2024/jan/25/its-whats-inside-movie-review-netflix",
+          "purpose": "review"
+        }
+      ],
+      "dna": {
+        "central_mystery": 7,
+        "mystery_density": 7,
+        "unexplained_phenomenon": 6,
+        "cause_uncertainty": 6,
+        "investigation": 5,
+        "clue_puzzling": 8,
+        "culprit_hunt": 5,
+        "progressive_revelation": 6,
+        "revelation_frequency": 7,
+        "plot_twists": 8,
+        "misdirection": 8,
+        "suspense": 7,
+        "hidden_truth": 8,
+        "conspiracy_coverup": 2,
+        "containment": 5,
+        "unknown_rules": 6,
+        "time_anomaly": 0,
+        "reality_uncertainty": 5,
+        "memory_identity_uncertainty": 10,
+        "scientific_cause": 8,
+        "supernatural_cause": 0,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 2,
+        "survival_pressure": 5,
+        "weirdness": 8,
+        "drama_focus": 6,
+        "romance_focus": 6,
+        "visual_quality": 9,
+        "retro_visual_style": 1,
+        "pace_speed": 8
+      },
+      "dna_confidence": 0.78,
+      "dna_tags": [
+        "closed_circle"
+      ]
+    },
+    {
+      "imdb_id": "tt0125659",
+      "type": "movie",
+      "title": "Open Your Eyes",
+      "year": 1997,
+      "reason": "César recounts his disfigurement and a suspected killing to a prison psychiatrist, but apparently restored appearances, changing faces, contradictory witnesses and a strangely empty Madrid steadily undermine his account of what is real. Recovered memories and a recurring Life Extension clue move the inquiry from a possible identity deception or mental illness toward an engineered dream, and a cryonics company's explanation connects the mismatched memories to an artificial-perception system. The resolution gives a concrete technological cause for the altered reality, although whether his final awakening succeeds is deliberately left open. Strengths are sustained second-half reality uncertainty, identity clues, escalating contradictions and a coherent hidden-cause explanation. Weaknesses: the first portion spends considerable time on romance, vanity and personal trauma; a large part of the explanatory mechanism arrives in a late conversation rather than through repeated fully independent deductions; and the final choice is more existential and emotional than procedural. The story's apparent time displacement is not conventional time travel, and its earlier-era aesthetic is assessed separately from its 1997 release date.",
+      "sources": [
+        {
+          "url": "https://www.imdb.com/title/tt0125659/",
+          "purpose": "identity"
+        },
+        {
+          "url": "https://www.imdb.com/title/tt0125659/plotsummary/",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://www.rottentomatoes.com/m/open_your_eyes_1999",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.thecrimson.com/article/1999/5/14/ojos-window-to-the-soul-ptranquilo/",
+          "purpose": "structure"
+        },
+        {
+          "url": "https://sightlines.media/film/1902/open-your-eyes-1997",
+          "purpose": "review"
+        }
+      ],
+      "dna": {
+        "central_mystery": 8,
+        "mystery_density": 6,
+        "unexplained_phenomenon": 8,
+        "cause_uncertainty": 8,
+        "investigation": 6,
+        "clue_puzzling": 7,
+        "culprit_hunt": 3,
+        "progressive_revelation": 6,
+        "revelation_frequency": 6,
+        "plot_twists": 7,
+        "misdirection": 8,
+        "suspense": 7,
+        "hidden_truth": 7,
+        "conspiracy_coverup": 3,
+        "containment": 4,
+        "unknown_rules": 7,
+        "time_anomaly": 2,
+        "reality_uncertainty": 10,
+        "memory_identity_uncertainty": 8,
+        "scientific_cause": 9,
+        "supernatural_cause": 0,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 3,
+        "survival_pressure": 4,
+        "weirdness": 8,
+        "drama_focus": 6,
+        "romance_focus": 7,
+        "visual_quality": 8,
+        "retro_visual_style": 5,
+        "pace_speed": 6
+      },
+      "dna_confidence": 0.77,
+      "dna_tags": [
+        "amnesia"
+      ]
+    }
+  ],
+  "research_rejections": [
+    {
+      "title": "The Resort",
+      "type": "series",
+      "year": 2022,
+      "imdb_id": "tt11897688",
+      "reason": "The eight-episode TVMaze guide shows that Emma, Noah and Baltasar pursue a real disappearance inquiry in successive episodes, culminating in a time-displaced cave explanation. However, a substantive critic who screened the complete season finds that the inquiry often consists of extended exposition, retrospective tangents and marital/grief material rather than proportionate new explanations; the central mechanism and disappearance answer are heavily deferred until the finale. Other criticism praises the performances and strangeness, but the disagreement makes whole-season revelation cadence and explanatory payoff too uncertain for a confident complete-DNA acceptance. Excluded qualitatively, not on its premise or genre label."
+    },
+    {
+      "title": "The Jacket",
+      "type": "movie",
+      "year": 2005,
+      "imdb_id": "tt0366627",
+      "reason": "A wrongfully confined veteran's experimental sensory-deprivation treatment produces apparent future visits and a question about his impending death. Complete-film synopsis and substantive criticism indicate that prolonged institutional abuse, personal suffering and the relationship with Jackie share the runtime with the time puzzle; its temporal mechanism remains speculative and several developments rely on coincidence or unexplained causation. The final altered future provides an emotional outcome rather than a rigorously discovered explanation of the phenomenon, so the progressive mystery payoff is insufficiently secure for complete DNA measurement."
+    }
+  ]
+}
