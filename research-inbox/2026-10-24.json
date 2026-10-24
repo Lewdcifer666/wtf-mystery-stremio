@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "genre": "mystery",
+  "research_date": "2026-10-24",
+  "candidates": [
+    {
+      "imdb_id": "tt6079516",
+      "type": "movie",
+      "title": "I See You",
+      "year": 2019,
+      "reason": "A detective's inquiry into missing boys and apparent disturbances in his family home initially seem like separate mysteries. A distinctive green pocketknife connects a new disappearance to old abductions, while missing household objects, unseen intruders and contradictory behaviour sustain a second question. At the midpoint the film replays earlier events from the perspective of two hidden house occupants, giving concrete natural explanations for supposed haunting clues; subsequent evidence about a concealed trailer and a surviving childhood victim reclassifies the detective's role and connects the abductions to the home invasion. This is a layered disappearance/culprit puzzle with active misdirection and multiple substantial reversals rather than a genuine supernatural story. Weaknesses: the first act devotes significant time to marital infidelity and family arguments, the investigation is interrupted by the viewpoint reset, the horror-like presentation can mislead viewers expecting a conventional detective story, and critics dispute the fairness of the heavily engineered final reveal. The late backstory and sudden perspective switch mean that progressive revelation is strong but not continuous.",
+      "sources": [
+        {
+          "url": "https://www.imdb.com/title/tt6079516/",
+          "purpose": "identity"
+        },
+        {
+          "url": "https://thecinemaholic.com/i-see-you-2019-ending-explained-who-kidnapped-justin/",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://www.rogerebert.com/reviews/i-see-you-movie-review-2019",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.rottentomatoes.com/m/i_see_you_2019",
+          "purpose": "structure"
+        },
+        {
+          "url": "https://www.metacritic.com/movie/i-see-you/",
+          "purpose": "review"
+        }
+      ],
+      "dna": {
+        "central_mystery": 9,
+        "mystery_density": 7,
+        "unexplained_phenomenon": 7,
+        "cause_uncertainty": 8,
+        "investigation": 7,
+        "clue_puzzling": 8,
+        "culprit_hunt": 8,
+        "progressive_revelation": 7,
+        "revelation_frequency": 7,
+        "plot_twists": 8,
+        "misdirection": 9,
+        "suspense": 8,
+        "hidden_truth": 9,
+        "conspiracy_coverup": 2,
+        "containment": 4,
+        "unknown_rules": 3,
+        "time_anomaly": 0,
+        "reality_uncertainty": 5,
+        "memory_identity_uncertainty": 2,
+        "scientific_cause": 0,
+        "supernatural_cause": 0,
+        "paranormal_horror_focus": 4,
+        "horror_focus": 5,
+        "survival_pressure": 5,
+        "weirdness": 6,
+        "drama_focus": 5,
+        "romance_focus": 3,
+        "visual_quality": 7,
+        "retro_visual_style": 0,
+        "pace_speed": 6
+      },
+      "dna_confidence": 0.8,
+      "dna_tags": [
+        "disappearance",
+        "detective_lead",
+        "small_town"
+      ]
+    },
+    {
+      "imdb_id": "tt6341832",
+      "type": "movie",
+      "title": "Oxygen",
+      "year": 2021,
+      "reason": "A woman awakens without reliable memories inside a failing cryogenic pod and must learn both the pod's operating rules and her own identity before the oxygen runs out. Across the film she interrogates its AI, traces photographs and personal records, calls supposed outside contacts, uncovers contradictory information about her husband and the chamber's manufacturer, and discovers that she is aboard an interstellar colonisation mission. The additional disclosure that she is a clone carrying another woman's memories substantially reframes the earlier identity clues; her final technical solution depends on understanding the pod's functions. The film combines an actively pursued hidden-cause mystery with unusually strong confinement and survival pressure. Weaknesses: its middle and final stretches increasingly emphasise mechanical survival and emotional identity questions rather than fresh independent deductions; several revelations arrive through explanatory phone calls, some scientific details and the closing escape are contrived, and critics disagree on the clone twist's predictability. Cryogenic sleep and the passage of years are ordinary elapsed time, not literal time travel; the cause is technological rather than supernatural.",
+      "sources": [
+        {
+          "url": "https://www.imdb.com/title/tt6341832/",
+          "purpose": "identity"
+        },
+        {
+          "url": "https://www.baramhouse.com/review/film-review/trevor-ruth/oxygen",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://www.rogerebert.com/reviews/oxygen-movie-review-2021",
+          "purpose": "structure"
+        },
+        {
+          "url": "https://www.theguardian.com/film/2021/may/13/oxygen-review-melanie-laurent",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.rottentomatoes.com/m/oxygen_2021",
+          "purpose": "review"
+        }
+      ],
+      "dna": {
+        "central_mystery": 8,
+        "mystery_density": 7,
+        "unexplained_phenomenon": 7,
+        "cause_uncertainty": 8,
+        "investigation": 7,
+        "clue_puzzling": 7,
+        "culprit_hunt": 0,
+        "progressive_revelation": 7,
+        "revelation_frequency": 7,
+        "plot_twists": 7,
+        "misdirection": 7,
+        "suspense": 9,
+        "hidden_truth": 7,
+        "conspiracy_coverup": 4,
+        "containment": 10,
+        "unknown_rules": 8,
+        "time_anomaly": 0,
+        "reality_uncertainty": 6,
+        "memory_identity_uncertainty": 9,
+        "scientific_cause": 9,
+        "supernatural_cause": 0,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 3,
+        "survival_pressure": 9,
+        "weirdness": 7,
+        "drama_focus": 3,
+        "romance_focus": 2,
+        "visual_quality": 8,
+        "retro_visual_style": 0,
+        "pace_speed": 7
+      },
+      "dna_confidence": 0.8,
+      "dna_tags": [
+        "amnesia",
+        "sealed_barrier",
+        "human_experiment"
+      ]
+    }
+  ],
+  "research_rejections": [
+    {
+      "title": "The Loft",
+      "type": "movie",
+      "year": 2014,
+      "imdb_id": "tt1850397",
+      "reason": "A dead woman in a secretly shared apartment produces an initial closed-circle culprit question, but the complete-film synopsis and substantive reviews show that extended flashbacks focus on affairs, betrayals, sexual exploitation and relationship recriminations. The eventual sequence of murder and attempted framing is assembled through increasingly implausible late explanations rather than proportionate clue-driven discoveries. Critics repeatedly describe the explanation as convoluted and the mystery as subordinated to an erotic domestic thriller. Excluded qualitatively for poor sustained investigative payoff and high romance/drama share, not because the premise lacks a whodunit."
+    }
+  ]
+}
