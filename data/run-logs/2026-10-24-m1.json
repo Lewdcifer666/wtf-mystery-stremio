@@ -1,0 +1,40 @@
+{
+  "run_id": "2026-10-24-m1",
+  "timestamp": "2026-10-24T09:33:58.660Z",
+  "searched": 3,
+  "accepted": 2,
+  "rejected": 1,
+  "duplicates": 0,
+  "accepted_items": [
+    {
+      "imdb_id": "tt6341832",
+      "type": "movie",
+      "title": "Oxygen",
+      "match_score": 85
+    },
+    {
+      "imdb_id": "tt6079516",
+      "type": "movie",
+      "title": "I See You",
+      "match_score": 75
+    }
+  ],
+  "rejection_summary": [
+    {
+      "title": "The Loft",
+      "type": "movie",
+      "year": 2014,
+      "imdb_id": "tt1850397",
+      "reason": "A dead woman in a secretly shared apartment produces an initial closed-circle culprit question, but the complete-film synopsis and substantive reviews show that extended flashbacks focus on affairs, betrayals, sexual exploitation and relationship recriminations. The eventual sequence of murder and attempted framing is assembled through increasingly implausible late explanations rather than proportionate clue-driven discoveries. Critics repeatedly describe the explanation as convoluted and the mystery as subordinated to an erotic domestic thriller. Excluded qualitatively for poor sustained investigative payoff and high romance/drama share, not because the premise lacks a whodunit.",
+      "category": "rejected"
+    }
+  ],
+  "publication": {
+    "schema_version": 1,
+    "daily_key": "mystery:2026-10-24",
+    "packet_hash": "8cd4d563f51cbaf415dd99b65ca4ddb69dbf2830d235c3f6f6d5a2daecd9a9b8",
+    "research_commit": "afebbdc92dedbee4c9b42762264de182a493dd3d",
+    "evaluated_base": "6b507ed843f052179ca4ddedfcf7866d7a5e1837",
+    "policy_fingerprint": "d40edd2274ed6ded31b37a35ac77f75a10da01424951c1c3909785b4b58841b7"
+  }
+}
