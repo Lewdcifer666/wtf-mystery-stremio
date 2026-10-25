@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "genre": "mystery",
+  "research_date": "2026-10-25",
+  "candidates": [
+    {
+      "imdb_id": "tt17506706",
+      "type": "series",
+      "title": "Reset",
+      "year": 2022,
+      "reason": "Across all fifteen episodes of the Chinese series, student Li Shiqing and game designer Xiao Heyun repeatedly relive an explosion on Bus 45. Early loops establish that avoiding a traffic collision does not prevent the blast, so they investigate a bomb, its carrier and the mechanics of the resets. Episodes three through eight use passenger belongings, conflicting accounts and police questioning to eliminate suspects; later loops expose an accomplice and trace the motive to a death five years earlier. The final episodes uncover a witness and evidence that explain the bombers' grievance, and the protagonists avert the explosion. The mystery remains active across the season rather than relying on an episode-one anomaly or a single finale twist. Strengths are sustained clue work, a closed suspect pool, escalating time-loop constraints and meaningful revelations about the bombing. Weaknesses: passenger backstories and repeated police interviews interrupt momentum, the last episodes slow down, the finale's logistics have been criticized as inconsistent, and the origin and ultimate mechanism of the time loop itself are never explained. The loop is genuinely impossible in-world, not merely nonlinear editing; its unexplained origin is a real limitation to the explanatory payoff.",
+      "sources": [
+        {
+          "url": "https://www.imdb.com/title/tt17506706/",
+          "purpose": "identity"
+        },
+        {
+          "url": "https://www.tvmaze.com/shows/59985/reset/episodeguide",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://dramaslot.com/reset-chinese-drama-review/",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://bitsyfanyi.wordpress.com/2022/02/07/reset-%E5%BC%80%E7%AB%AF/",
+          "purpose": "review"
+        },
+        {
+          "url": "https://108ent.blogspot.com/2022/09/series-review-reset-2022.html",
+          "purpose": "review"
+        }
+      ],
+      "dna": {
+        "central_mystery": 8,
+        "mystery_density": 8,
+        "unexplained_phenomenon": 9,
+        "cause_uncertainty": 8,
+        "investigation": 8,
+        "clue_puzzling": 8,
+        "culprit_hunt": 8,
+        "progressive_revelation": 8,
+        "revelation_frequency": 8,
+        "plot_twists": 7,
+        "misdirection": 8,
+        "suspense": 9,
+        "hidden_truth": 8,
+        "conspiracy_coverup": 1,
+        "containment": 8,
+        "unknown_rules": 8,
+        "time_anomaly": 10,
+        "reality_uncertainty": 4,
+        "memory_identity_uncertainty": 2,
+        "scientific_cause": 0,
+        "supernatural_cause": 8,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 1,
+        "survival_pressure": 9,
+        "weirdness": 8,
+        "drama_focus": 4,
+        "romance_focus": 2,
+        "visual_quality": 8,
+        "retro_visual_style": 0,
+        "pace_speed": 8
+      },
+      "dna_confidence": 0.85,
+      "dna_tags": [
+        "time_loop",
+        "closed_circle"
+      ]
+    },
+    {
+      "imdb_id": "tt0945513",
+      "type": "movie",
+      "title": "Source Code",
+      "year": 2011,
+      "reason": "An Army captain repeatedly inhabits the last eight minutes of a train passenger's life to identify a bomber before another attack. Each replay permits fresh observation of passengers, objects, conversations and the bomb itself, while his parallel questioning of the military operators exposes why he was chosen and what happened to his own body. The culprit inquiry and the hidden-technology/identity mystery advance together, and the closing alternate reality changes the apparent rules of the experiment. Complete-film criticism confirms that clues and significant information arrive throughout the brisk runtime, not just at the end. Strengths include two intertwined central questions, repeated deduction, temporal and identity uncertainty, sustained urgency and a concrete culprit answer. Weaknesses: the premise's scientific explanation is speculative and only partly coherent, the emotional bond with a passenger competes with investigation, and critics dispute the final extension into a surviving parallel timeline as sentimental or logically convenient. The time displacement is an in-world technological anomaly, not simply flashback editing; the film's visual style is assessed separately from its release year.",
+      "sources": [
+        {
+          "url": "https://www.imdb.com/title/tt0945513/plotsummary/",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://www.avclub.com/source-code-1798167813",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.theguardian.com/film/2011/apr/03/source-code-review-jake-gyllenhaal",
+          "purpose": "structure"
+        },
+        {
+          "url": "https://www.rogerebert.com/reviews/source-code-2011",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.slantmagazine.com/film/sxsw-2011-source-code/",
+          "purpose": "review"
+        }
+      ],
+      "dna": {
+        "central_mystery": 8,
+        "mystery_density": 9,
+        "unexplained_phenomenon": 8,
+        "cause_uncertainty": 8,
+        "investigation": 8,
+        "clue_puzzling": 8,
+        "culprit_hunt": 8,
+        "progressive_revelation": 8,
+        "revelation_frequency": 8,
+        "plot_twists": 7,
+        "misdirection": 7,
+        "suspense": 9,
+        "hidden_truth": 8,
+        "conspiracy_coverup": 7,
+        "containment": 7,
+        "unknown_rules": 8,
+        "time_anomaly": 9,
+        "reality_uncertainty": 8,
+        "memory_identity_uncertainty": 9,
+        "scientific_cause": 9,
+        "supernatural_cause": 0,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 1,
+        "survival_pressure": 8,
+        "weirdness": 8,
+        "drama_focus": 3,
+        "romance_focus": 4,
+        "visual_quality": 8,
+        "retro_visual_style": 2,
+        "pace_speed": 9
+      },
+      "dna_confidence": 0.87,
+      "dna_tags": [
+        "time_loop",
+        "parallel_timeline",
+        "human_experiment"
+      ]
+    }
+  ],
+  "research_rejections": []
+}
