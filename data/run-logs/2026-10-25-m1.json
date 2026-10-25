@@ -1,0 +1,31 @@
+{
+  "run_id": "2026-10-25-m1",
+  "timestamp": "2026-10-25T10:28:24.347Z",
+  "searched": 2,
+  "accepted": 2,
+  "rejected": 0,
+  "duplicates": 0,
+  "accepted_items": [
+    {
+      "imdb_id": "tt0945513",
+      "type": "movie",
+      "title": "Source Code",
+      "match_score": 96
+    },
+    {
+      "imdb_id": "tt17506706",
+      "type": "series",
+      "title": "Reset",
+      "match_score": 91
+    }
+  ],
+  "rejection_summary": [],
+  "publication": {
+    "schema_version": 1,
+    "daily_key": "mystery:2026-10-25",
+    "packet_hash": "19f8dfc68e837c3f307e9d53f80e6de769bbb21f0acc8706692be19d1708fd83",
+    "research_commit": "81719ff0b6553d606e3e7893c99c009e239df07f",
+    "evaluated_base": "cab6129d3fd25ce3388483b74702e4de4c31861b",
+    "policy_fingerprint": "d40edd2274ed6ded31b37a35ac77f75a10da01424951c1c3909785b4b58841b7"
+  }
+}
