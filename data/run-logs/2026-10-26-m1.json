@@ -1,0 +1,48 @@
+{
+  "run_id": "2026-10-26-m1",
+  "timestamp": "2026-10-26T10:29:19.427Z",
+  "searched": 4,
+  "accepted": 2,
+  "rejected": 2,
+  "duplicates": 0,
+  "accepted_items": [
+    {
+      "imdb_id": "tt0830361",
+      "type": "series",
+      "title": "The Lost Room",
+      "match_score": 90
+    },
+    {
+      "imdb_id": "tt8781414",
+      "type": "movie",
+      "title": "Freaks",
+      "match_score": 85
+    }
+  ],
+  "rejection_summary": [
+    {
+      "title": "Time Trap",
+      "type": "movie",
+      "year": 2017,
+      "imdb_id": "tt4815122",
+      "reason": "A missing professor, cave confinement and progressively discovered time dilation provide a promising mystery: camera footage and visits to the surface establish that years pass outside while minutes elapse inside. However, complete-film plot evidence and substantive reviews describe a later shift into caveman attacks, futuristic rescuers and Fountain-of-Youth spectacle with inconsistent time rules and an overly convenient rescue. The apparent explanations do not coherently account for many of the cave's details. The high-concept premise and initial rule discoveries do not outweigh the disputed explanatory payoff and adventure-action drift, so this is excluded qualitatively rather than receiving unjustified complete DNA measurements.",
+      "category": "rejected"
+    },
+    {
+      "title": "Level 16",
+      "type": "movie",
+      "year": 2018,
+      "imdb_id": "tt4006302",
+      "reason": "The windowless academy, sedating vitamins and forbidden exploration sustain a clear hidden-purpose question, and Vivien and Sophia do uncover an actual exploitative operation. Yet full-film reconstruction and substantive criticism show that the story concentrates on one underlying secret, distributes small breadcrumbs without proportionate intermediate answers, and holds its principal explanation until very late. Once the truth arrives, the film quickly shifts into escape and resolution. Its oppressive atmosphere and character development are strengths, but the heavily deferred reveal is not enough to establish the profile's preferred whole-runtime progressive answers. Excluded qualitatively, not because a dystopian or low-budget premise is inherently unsuitable.",
+      "category": "rejected"
+    }
+  ],
+  "publication": {
+    "schema_version": 1,
+    "daily_key": "mystery:2026-10-26",
+    "packet_hash": "5393db415cff99efca7870fe561ec7a57d7f261d3215fa928f7356fe13b29752",
+    "research_commit": "8e3d0cf58f20010c0f38509ebb9934440b03e883",
+    "evaluated_base": "9c322139ce83bbf25a76f5572c4c52a9d53cda29",
+    "policy_fingerprint": "4d3c405fe084063591b4e35b4497e9e78952f85fbb4122a113c29ba4650bd564"
+  }
+}
