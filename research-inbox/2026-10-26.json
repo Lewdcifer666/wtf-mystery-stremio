@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "genre": "mystery",
+  "research_date": "2026-10-26",
+  "candidates": [
+    {
+      "imdb_id": "tt0830361",
+      "type": "series",
+      "title": "The Lost Room",
+      "year": 2006,
+      "reason": "The complete three-part, approximately six-hour miniseries follows detective Joe Miller from a pawn-shop murder involving a strange motel key to his daughter's disappearance into Room 10. Part one establishes the key's door-travel function and the room's reset danger; part two introduces competing object collectors, the Legion, an object's history and the search for a Prime Object; part three tests alliances, reveals the human Occupant and the room's additional rules, and resolves the immediate rescue. Object effects, the motel's 1961 Event, conflicting motives and the room's reset behavior are investigated across the entire story, so this is a continuing rules-and-hidden-cause puzzle rather than an unexplained pilot followed by unrelated drama. Its strengths are dense supernatural-object discoveries, sustained pursuit, meaningful rule revelations and a concrete resolution to the missing-daughter question. Its central limitation is that the ultimate cause of the 1961 Event and why the Objects exist are never truly explained; the mythology grows convoluted, the last part sometimes feels rushed, and the production has a recognizable mid-2000s television presentation. Some distributors split the three broadcast parts into six shorter episodes; the TVMaze guide records the three original parts. The room exists outside normal space and time, but the story is not principally about literal time travel.",
+      "sources": [
+        {
+          "url": "https://www.imdb.com/title/tt0830361/",
+          "purpose": "identity"
+        },
+        {
+          "url": "https://www.tvmaze.com/shows/503/the-lost-room/episodeguide",
+          "purpose": "whole_runtime"
+        },
+        {
+          "url": "https://www.denofgeek.com/tv/the-lost-room-review/",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.metacritic.com/tv/the-lost-room/",
+          "purpose": "review"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Lost_Room",
+          "purpose": "whole_runtime"
+        }
+      ],
+      "dna": {
+        "central_mystery": 9,
+        "mystery_density": 8,
+        "unexplained_phenomenon": 9,
+        "cause_uncertainty": 9,
+        "investigation": 8,
+        "clue_puzzling": 8,
+        "culprit_hunt": 3,
+        "progressive_revelation": 8,
+        "revelation_frequency": 8,
+        "plot_twists": 8,
+        "misdirection": 7,
+        "suspense": 8,
+        "hidden_truth": 9,
+        "conspiracy_coverup": 7,
+        "containment": 5,
+        "unknown_rules": 10,
+        "time_anomaly": 2,
+        "reality_uncertainty": 8,
+        "memory_identity_uncertainty": 2,
+        "scientific_cause": 0,
+        "supernatural_cause": 10,
+        "paranormal_horror_focus": 2,
+        "horror_focus": 3,
+        "survival_pressure": 6,
+        "weirdness": 9,
+        "drama_focus": 3,
+        "romance_focus": 1,
+        "visual_quality": 6,
+        "retro_visual_style": 5,
+        "pace_speed": 7
+      },
+      "dna_confidence": 0.84,
+      "dna_tags": [
+        "secret_organization",
+        "disappearance",
+        "detective_lead"
+      ]
+    },
+    {
+      "imdb_id": "tt8781414",
+      "type": "movie",
+      "title": "Freaks",
+      "year": 2018,
+      "reason": "Seven-year-old Chloe is confined inside a boarded-up home by her frightened father, whose warnings about the outside world conflict with glimpses of ordinary suburban life. The film reveals its world in successive stages: Chloe's unusual influence over other people, the ice-cream seller's real connection to her, the government's campaign against people with abilities, her father's manipulation of time, and the truth about her supposedly dead mother. Early details that seem like hallucinations, haunting or an apocalypse acquire concrete explanations as Chloe tests her surroundings, meets outsiders and learns the limits of her family's powers. The film sustains a hidden-world and unknown-rules question through much of its runtime rather than reserving every answer for the final minutes. Weaknesses are significant parent-child trauma and confinement drama, confusing viewpoint tricks, overt political allegory and a last act that turns toward a comparatively conventional superpowered rescue/action climax once most mysteries are explained. Critics disagree about the emotional and logical payoff, and the story leaves its larger world conflict open. The extraordinary abilities are genuinely present in-world, not ghosts; the father's time manipulation is a real temporal effect but not a time-loop investigation.",
+      "sources": [
+        {
+          "url": "https://www.imdb.com/title/tt8781414/",
+          "purpose": "identity"
+        },
+        {
+          "url": "https://www.thelastthingisee.com/2019/09/freaks-2018-movie-review.html",
+          "purpose": "structure"
+        },
+        {
+          "url": "https://www.rogerebert.com/reviews/freaks-movie-review-2019",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.filmblerg.com/2019/09/12/film-review-freaks-2018/",
+          "purpose": "review"
+        },
+        {
+          "url": "https://www.riotmaterial.com/freaks-sci-fi/",
+          "purpose": "review"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Freaks_%282018_film%29",
+          "purpose": "whole_runtime"
+        }
+      ],
+      "dna": {
+        "central_mystery": 8,
+        "mystery_density": 7,
+        "unexplained_phenomenon": 8,
+        "cause_uncertainty": 8,
+        "investigation": 6,
+        "clue_puzzling": 7,
+        "culprit_hunt": 2,
+        "progressive_revelation": 7,
+        "revelation_frequency": 7,
+        "plot_twists": 7,
+        "misdirection": 8,
+        "suspense": 8,
+        "hidden_truth": 8,
+        "conspiracy_coverup": 6,
+        "containment": 8,
+        "unknown_rules": 7,
+        "time_anomaly": 7,
+        "reality_uncertainty": 7,
+        "memory_identity_uncertainty": 4,
+        "scientific_cause": 2,
+        "supernatural_cause": 7,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 3,
+        "survival_pressure": 7,
+        "weirdness": 8,
+        "drama_focus": 6,
+        "romance_focus": 0,
+        "visual_quality": 7,
+        "retro_visual_style": 1,
+        "pace_speed": 7
+      },
+      "dna_confidence": 0.78,
+      "dna_tags": [
+        "sealed_barrier",
+        "secret_organization"
+      ]
+    }
+  ],
+  "research_rejections": [
+    {
+      "title": "Time Trap",
+      "type": "movie",
+      "year": 2017,
+      "imdb_id": "tt4815122",
+      "reason": "A missing professor, cave confinement and progressively discovered time dilation provide a promising mystery: camera footage and visits to the surface establish that years pass outside while minutes elapse inside. However, complete-film plot evidence and substantive reviews describe a later shift into caveman attacks, futuristic rescuers and Fountain-of-Youth spectacle with inconsistent time rules and an overly convenient rescue. The apparent explanations do not coherently account for many of the cave's details. The high-concept premise and initial rule discoveries do not outweigh the disputed explanatory payoff and adventure-action drift, so this is excluded qualitatively rather than receiving unjustified complete DNA measurements."
+    },
+    {
+      "title": "Level 16",
+      "type": "movie",
+      "year": 2018,
+      "imdb_id": "tt4006302",
+      "reason": "The windowless academy, sedating vitamins and forbidden exploration sustain a clear hidden-purpose question, and Vivien and Sophia do uncover an actual exploitative operation. Yet full-film reconstruction and substantive criticism show that the story concentrates on one underlying secret, distributes small breadcrumbs without proportionate intermediate answers, and holds its principal explanation until very late. Once the truth arrives, the film quickly shifts into escape and resolution. Its oppressive atmosphere and character development are strengths, but the heavily deferred reveal is not enough to establish the profile's preferred whole-runtime progressive answers. Excluded qualitatively, not because a dystopian or low-budget premise is inherently unsuitable."
+    }
+  ]
+}
