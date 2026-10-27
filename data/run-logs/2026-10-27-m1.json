@@ -1,0 +1,46 @@
+{
+  "run_id": "2026-10-27-m1",
+  "timestamp": "2026-10-27T10:28:34.258Z",
+  "searched": 4,
+  "accepted": 3,
+  "rejected": 1,
+  "duplicates": 0,
+  "accepted_items": [
+    {
+      "imdb_id": "tt0119174",
+      "type": "movie",
+      "title": "The Game",
+      "match_score": 84
+    },
+    {
+      "imdb_id": "tt0186151",
+      "type": "movie",
+      "title": "Frequency",
+      "match_score": 83
+    },
+    {
+      "imdb_id": "tt1016301",
+      "type": "movie",
+      "title": "Fermat's Room",
+      "match_score": 78
+    }
+  ],
+  "rejection_summary": [
+    {
+      "title": "Exam",
+      "type": "movie",
+      "year": 2009,
+      "imdb_id": "tt1258197",
+      "reason": "Eight applicants try to solve a blank-paper recruitment test under strict rules in a locked room. Their repeated attempts at hidden writing and shifting alliances provide some real puzzle activity, but full-film reconstruction shows that much of the middle focuses on manipulation, coercion, disqualifications and interpersonal conflict rather than cumulative discoveries about the central question. The final answer rests on a tiny wording detail from the opening instructions, while the pharmaceutical-company reveal is largely expository. Substantive criticism, including The Guardian, describes the ending as anticlimactic and the promising setup as underdeveloped. Excluded qualitatively because sustained investigation does not deliver proportionate progressive explanations.",
+      "category": "rejected"
+    }
+  ],
+  "publication": {
+    "schema_version": 1,
+    "daily_key": "mystery:2026-10-27",
+    "packet_hash": "a5365542a3fc757b5391f760988a5a90453c1c42d0776aa2b78d9b65f0036628",
+    "research_commit": "ceb7ea47471e6a08bc50f3e409f2bc7ea3f87df5",
+    "evaluated_base": "abcb498153ce9415731420b3001e13d80919a41a",
+    "policy_fingerprint": "4d3c405fe084063591b4e35b4497e9e78952f85fbb4122a113c29ba4650bd564"
+  }
+}
