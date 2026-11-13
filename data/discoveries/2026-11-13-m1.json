@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-11-13-m1",
+  "timestamp": "2026-11-13T10:41:09.697Z",
+  "items": [
+    {
+      "imdb_id": "tt3148266",
+      "type": "series",
+      "title": "12 Monkeys",
+      "year": 2015,
+      "reason": "Across four completed seasons, Cole and Railly's investigation evolves from identifying a plague's origin into unraveling the Witness, the Army of the 12 Monkeys and self-reinforcing temporal paradoxes. TVMaze's season-by-season descriptions document successive answers and changing goals; the final season's episode guide follows specific clues, a weapon hunt and the resolution of the central cycle. Independent full-series and finale criticism corroborates that mysteries receive repeated payoffs rather than remaining a pilot-only premise. The structure offers sustained investigative clues, reversals and time-rule discovery. Weaknesses: considerable apocalyptic action, survival stakes, relationship drama and a romance-driven final resolution; the concluding emotional coda and some time-travel logic have divided viewers. Scores are descriptive evidence-based estimates, not final match scores.",
+      "dna": {
+        "central_mystery": 9,
+        "mystery_density": 8,
+        "unexplained_phenomenon": 8,
+        "cause_uncertainty": 8,
+        "investigation": 8,
+        "clue_puzzling": 8,
+        "culprit_hunt": 6,
+        "progressive_revelation": 9,
+        "revelation_frequency": 8,
+        "plot_twists": 9,
+        "misdirection": 8,
+        "suspense": 8,
+        "hidden_truth": 9,
+        "conspiracy_coverup": 9,
+        "containment": 2,
+        "unknown_rules": 8,
+        "time_anomaly": 10,
+        "reality_uncertainty": 7,
+        "memory_identity_uncertainty": 6,
+        "scientific_cause": 8,
+        "supernatural_cause": 4,
+        "paranormal_horror_focus": 0,
+        "horror_focus": 2,
+        "survival_pressure": 7,
+        "weirdness": 7,
+        "drama_focus": 5,
+        "romance_focus": 4,
+        "visual_quality": 7,
+        "retro_visual_style": 2,
+        "pace_speed": 7
+      },
+      "dna_confidence": 0.7,
+      "dna_tags": [
+        "time_loop",
+        "parallel_timeline",
+        "secret_organization",
+        "contagion",
+        "cult"
+      ],
+      "status": "watch",
+      "tags": [],
+      "match_score": 94,
+      "added_at": "2026-11-13T10:41:09.697Z",
+      "added_by": "daily-automation",
+      "discovery_run_id": "2026-11-13-m1",
+      "source": "https://www.imdb.com/title/tt3148266/ ; https://www.tvmaze.com/shows/614/12-monkeys/seasons ; https://www.metacritic.com/tv/12-monkeys-2015/season-4/ ; https://www.slashfilm.com/559216/12-monkeys-tv-show/ ; https://www.tvline.com/news/12-monkeys-recap-series-finale-cole-cassie-reunited-961076/ ; https://www.rottentomatoes.com/tv/12_monkeys/s04"
+    }
+  ]
+}
