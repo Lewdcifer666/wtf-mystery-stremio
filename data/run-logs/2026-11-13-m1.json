@@ -1,0 +1,25 @@
+{
+  "run_id": "2026-11-13-m1",
+  "timestamp": "2026-11-13T10:41:09.697Z",
+  "searched": 1,
+  "accepted": 1,
+  "rejected": 0,
+  "duplicates": 0,
+  "accepted_items": [
+    {
+      "imdb_id": "tt3148266",
+      "type": "series",
+      "title": "12 Monkeys",
+      "match_score": 94
+    }
+  ],
+  "rejection_summary": [],
+  "publication": {
+    "schema_version": 1,
+    "daily_key": "mystery:2026-11-13",
+    "packet_hash": "28de8be9a6f3b533dca8384b4db7dd671a5234a721d0a4b632bac567652b719a",
+    "research_commit": "2523cf018c171a804e125aed38258d53a39df3b4",
+    "evaluated_base": "122048dce4f9249d922c09db108973a419434f6e",
+    "policy_fingerprint": "f31009fb2653c1d65c1c8f5b24b3eaab027b6c087bcc26d4afb94097ee2294a8"
+  }
+}
