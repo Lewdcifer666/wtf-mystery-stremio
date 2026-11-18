@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-11-18-m1",
+  "timestamp": "2026-11-18T10:38:05.679Z",
+  "items": [
+    {
+      "imdb_id": "tt0246578",
+      "type": "movie",
+      "title": "Donnie Darko",
+      "year": 2001,
+      "reason": "A jet engine with no traceable origin, Frank's countdown, visions of predetermined paths and a time-travel text keep the central causal puzzle active throughout the film. Donnie's inquiry into the anomalous events and his apparent manipulation gradually reveal a causal knot, with a timeline reversal providing substantial resolution. The film is unusually surreal and structurally driven by questions about reality and temporal rules. Weaknesses: high-school, family and romantic drama occupy meaningful stretches; several mechanisms remain interpretively ambiguous in the theatrical cut, and Roger Ebert explicitly found the final payoff less satisfying than the setup. The director's cut explains more but is a different edit. Scores describe the original film, with moderate confidence on precise revelation cadence and visual-era presentation.",
+      "dna": {
+        "central_mystery": 9,
+        "mystery_density": 7,
+        "unexplained_phenomenon": 9,
+        "cause_uncertainty": 9,
+        "investigation": 6,
+        "clue_puzzling": 7,
+        "culprit_hunt": 1,
+        "progressive_revelation": 7,
+        "revelation_frequency": 6,
+        "plot_twists": 7,
+        "misdirection": 7,
+        "suspense": 7,
+        "hidden_truth": 7,
+        "conspiracy_coverup": 2,
+        "containment": 1,
+        "unknown_rules": 9,
+        "time_anomaly": 10,
+        "reality_uncertainty": 9,
+        "memory_identity_uncertainty": 5,
+        "scientific_cause": 4,
+        "supernatural_cause": 8,
+        "paranormal_horror_focus": 2,
+        "horror_focus": 3,
+        "survival_pressure": 5,
+        "weirdness": 9,
+        "drama_focus": 5,
+        "romance_focus": 4,
+        "visual_quality": 7,
+        "retro_visual_style": 4,
+        "pace_speed": 5
+      },
+      "dna_confidence": 0.7,
+      "dna_tags": [
+        "time_loop",
+        "parallel_timeline"
+      ],
+      "status": "watch",
+      "tags": [],
+      "match_score": 82,
+      "added_at": "2026-11-18T10:38:05.679Z",
+      "added_by": "daily-automation",
+      "discovery_run_id": "2026-11-18-m1",
+      "source": "https://www.imdb.com/title/tt0246578/ ; https://www.rogerebert.com/reviews/donnie-darko-2001 ; https://www.thereviewgeek.com/donniedarko-endingexplained/ ; https://www.slashfilm.com/620198/donnie-darko-ending-explained-the-power-of-selflessness/ ; https://ew.com/donnie-darko-ending-explained-frank-11820296"
+    }
+  ]
+}

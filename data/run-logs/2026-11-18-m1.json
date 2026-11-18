@@ -1,0 +1,25 @@
+{
+  "run_id": "2026-11-18-m1",
+  "timestamp": "2026-11-18T10:38:05.679Z",
+  "searched": 1,
+  "accepted": 1,
+  "rejected": 0,
+  "duplicates": 0,
+  "accepted_items": [
+    {
+      "imdb_id": "tt0246578",
+      "type": "movie",
+      "title": "Donnie Darko",
+      "match_score": 82
+    }
+  ],
+  "rejection_summary": [],
+  "publication": {
+    "schema_version": 1,
+    "daily_key": "mystery:2026-11-18",
+    "packet_hash": "6325e8294d834af46324a5cdccda0b2c0e7b1ce02e330b8c15b893c6c8935811",
+    "research_commit": "25b106e67cc3856b367977d3b9a5906e9aac5c69",
+    "evaluated_base": "29293cf05338d4167a94963944db6b1ec135d824",
+    "policy_fingerprint": "f31009fb2653c1d65c1c8f5b24b3eaab027b6c087bcc26d4afb94097ee2294a8"
+  }
+}
